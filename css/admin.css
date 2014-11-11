@@ -1,0 +1,111 @@
+.icon-div{
+    float:left; 
+    height:100%; 
+    overflow:auto;
+}
+.icon-palette{
+    line-height:20px; 
+    width:350px; 
+    max-height: 600px; 
+    overflow-x:hidden; 
+    overflow-y: auto; 
+    line-height: 35px;
+}
+.current-icon-item{
+    background: url() left top no-repeat; vertical-align:middle;
+}
+.garmin-icon-item{
+    background: url() left top no-repeat; vertical-align:middle;
+}
+#current-icon-list{
+    width:300px;
+}
+.current-icon-name{
+    margin-left:35px;
+}
+.garmin-icon-name{
+    margin-left:35px;
+}
+.lib-select{
+    height:100%; 
+    margin-left:320px;
+}
+.icon-library-list{
+    margin-left:10px;
+    margin-top:25px;
+    list-style-type:none;
+}
+.icon-delete{
+    margin-left:10px;
+    margin-right:10px;
+    width:20px;
+    height:20px;
+    padding-left:20px;
+    background: url(../image/reset.png) left top no-repeat; vertical-align:middle;
+}
+.icon-delete:hover{
+    background: url(../image/alert.png) left top no-repeat; vertical-align:middle;
+}
+.icon-add{
+    margin-left:55px;
+    margin-right:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    height:32px;
+    padding-left:20px;
+    // background: url(../image/add.png) left top no-repeat; vertical-align:middle;
+}
+.icon-add input{
+    height:32px;
+}
+.tools-div a{
+    margin-right:20px;
+    font-weight:bold;
+    color: black;
+    border:1px;
+    border-color:gray;
+    border-style:solid;
+    padding:3px;
+}
+.tools-div a:hover{
+    text-decoration:none;
+    font-weight:bold;
+    color: white;
+    background-color: black;
+    border:1px;
+    border-color:gray;
+    border-style:solid;
+    padding:3px;
+}
+#shortcode-browser{
+    width:100%;
+    border-style:solid;
+    border-width:1px;
+    border-color:silver;
+    height:200px;
+    overflow:auto;
+}
+#shortcode{
+    width:100%;
+    height:100px;
+}
+#shortcode-options div{
+    margin-top:5px;
+}
+#shortcode-options div input{
+    vertical-align:middle;
+}
+#shortcode-options div div{
+    float:left;
+    width:100px;
+}
+#shortcode-url{
+    width:100%;
+}
+.ibs-admin-bar{
+    margin-top:10px; 
+    font-weight:bold;
+    background-color:gray; 
+    color:white; 
+    padding:3px;
+}
