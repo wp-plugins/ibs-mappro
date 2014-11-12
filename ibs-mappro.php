@@ -511,9 +511,9 @@ class IBS_MAPPRO {
                 <form action="options.php" method="post">
                     <?php settings_fields('ibs_mappro_options'); ?>
                     <?php do_settings_sections('mappro-general'); ?>
-                    <?php do_settings_sections('mappro-main'); ?>
-                    <?php do_settings_sections('maps'); ?>
-                    <?php submit_button(); ?>
+        <?php do_settings_sections('mappro-main'); ?>
+        <?php do_settings_sections('maps'); ?>
+        <?php submit_button(); ?>
                 </form>
             </div>
             <div id="ibs-map-tab-map">
@@ -538,7 +538,7 @@ class IBS_MAPPRO {
                     <div> <div>pid</div><input class="shortcode-input" type="text" placeholder="email tracking" name=pid" id="shortcode-pids"/> names of markers to track by email postings.</div>
                     <div> <div>width</div><input class="shortcode-input" type="text" placeholder="map width" name="width" value="550px" id="shortcode-width" /></div>
                     <div> <div>height</div><input class="shortcode-input" type="text" placeholder="map height" name="height" value="550px" id="shortcode-height" /></div>
-                    <div> <input class="shortcode-input" type="text" placeholder="map url" name="url" disabled value="" id="shortcode-url" /></div>
+                    <div> <div>url</div><input class="shortcode-input" type="text" placeholder="map url" name="url" value="" id="shortcode-url" /></div>
                 </div>
                 <div class="ibs-admin-bar" >&nbsp; Select map file</div>
                 <div id="shortcode-browser"></div>
@@ -549,16 +549,16 @@ class IBS_MAPPRO {
             <div id="ibs-map-tab-icons">
                 <form action="options.php" method="post">
                     <?php settings_fields('ibs_mappro_icons'); ?>
-                    <?php do_settings_sections('icons'); ?>
-                    <?php do_settings_sections('manage_icons'); ?>
-                    <?php submit_button(); ?>
+        <?php do_settings_sections('icons'); ?>
+        <?php do_settings_sections('manage_icons'); ?>
+        <?php submit_button(); ?>
                 </form>
             </div>
             <div id="ibs-map-tab-garmin">
                 <form action="options.php" method="post">
-                    <?php settings_fields('ibs_mappro_garmin'); ?>
-                    <?php do_settings_sections('garmin'); ?>
-                    <?php submit_button(); ?>
+        <?php settings_fields('ibs_mappro_garmin'); ?>
+        <?php do_settings_sections('garmin'); ?>
+        <?php submit_button(); ?>
                 </form>
             </div>
         </div>
@@ -895,11 +895,28 @@ class IBS_MAPPRO {
 IBS_MAPPRO::init();
 require_once(IBS_MAPPRO::get_root() . 'wp-admin/includes/class-pclzip.php');
 
+//Postie filter for map tracking short codes
 
+add_filter('postie_post_before', 'ibs_process_email_shortcodes');
 
+//[spid name="location" name2="location"]
 
+function ibs_handle_shortcode_spid($atts, $content = null) {
+    $pids = get_option('ibs-where-is', array("jim" => "kansas city, mo", "joe" => "linden, tx", "bob" => "little rock, ar"));
+    foreach($atts as $key=>$value){
+        $id = ucfirst(trim(str_replace('"', '', $key)));
+        $loc = trim(str_replace('"', '', $value));
+        $pids[$id] = $loc;
+    }
+}
 
-
-
-
-
+function ibs_process_email_shortcodes($post) {
+    global $shortcode_tags;
+    $save_shortcode_tags = $shortcode_tags;
+    remove_all_shortcodes();
+    add_shortcode('spid', 'ibs_handle_shortcode_spid');
+    $post['post_content'] = do_shortcode($post['post_content']);
+    remove_shortcode('spid');
+    $shortcode_tags = $save_shortcode_tags;
+    return $post;
+}
