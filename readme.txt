@@ -13,31 +13,24 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Comprehensive map editor and viewers for the traveling journalist
 
 == Description ==
-IBS Mappro plugin is a comprehensive map creator, editor, and viewer generator using the Google Maps API v3 supporting kml, kmz, and gpx map files. 
-=Shortcodes=
-Though Wordpress shortcodes IBS Mappro generates map viewers for posts and pages on your website. Included in the administation facilities is a shortcode generator to help produce the right map viewer for your posts.
-=Place markers=
-Perhaps unique to this plugin is the ability to add marker icon libraries and customize the marker icon palette. And for the Garmin GPX files the plugin provides the ability to map icon images to the GPX symbol names.
-Place markers, besides having selectable and distinguishing icon images, can include in their description links and images along with text created with a robust editor.
-=Route creation=
-Map routes are created by defining the route path through a series of points and between the points can follow roads or if bushwacking across county edit point by point.
-Optionally routes may be created using the Google Direction service which will yield cue sheets that cane stored with the map data. The editor also provides for printing of the cue sheets.
-=Elevation profiles=
-Elevation profiles may be displayed for individual route segments and the profile tracked on the map.
-=Email tracking=
-With the IBS Mailbox plugin (to be released soon) markers may be set up on the map and reposition by email postings.
-=Notable editing features=
-* switch travel direction for a route segment or the entire map.
-* import any number of maps into the map editor. They will be merged together.
-* save to desktop or save to the server map folder.
-* edit at the line level with waypoint marker clustering.
-* output GPX files with route or tracks.
-* combine or split route segments.
-* route segments can combine different modes of travel.
-=State of Development=
-Presently IBS Mappro is in its Beta phase of development and all testing and issues reporting are appreciated.
-IBS Mappro is a cornerstone for providing the traveling journalist Wordpress assets for their jounals. Ideas and suggestions for this concept are welcomed. 
-Especially those related to the world of mobile computing.
+* IBS Mappro is a comprehensive map creator, editor, and view generator based on the Google Maps API v3 and supports kml, kmz, and gpx map files. 
+* Shortcodes Wordpress shortcodes generate map viewers for posts and pages on your website. 
+* Included in the admin facilities is a shortcode generator to help produce the right map viewer for your posts.
+* Perhaps unique to this plugin is the ability to add marker icon libraries and customize the marker icon palette. 
+* The ability to map your icon images to GPX symbol names.
+* Place marker may include in their description links and images along with the text written using the CKEditor.
+* Routes may be created using the Google Direction service which yields cue sheets that are stored with the map data.
+* CKEditor has the facility to print the cue sheets.
+* Elevation profiles may be displayed for route segments and their profile tracked on the map route.
+* Can switch travel direction for a single or all route segments.
+* Import and merge any number of maps files into the map editor.
+* Save maps to the desktop (download) or the server map folder.
+* Edit map routes down to discrete path points with the line editing feature.
+* Output GPX files with routes, tracks or both.
+* Combine or split route segments.
+* A route segments can combine different modes of travel.
+
+Presently IBS Mappro is in its Beta phase of development and all testing and reporting of issues is appreciated.
 
 == Installation ==
 1. Download ibs-mappro-0.1.zip and unzip.
@@ -46,11 +39,11 @@ Especially those related to the world of mobile computing.
 4 Admin | Settings menu | IBS Mappro and configure the plugin.
 
 == Frequently Asked Questions ==
-**How do I draw a map?** Staring at the blank map editor there is no clue where to begin creating a map. On the left side of the map editor there is a "list area" and there is a link that says "Route." Click that link and move your mouse over the map and the cursor changes to a cross hair and a small meesage box that say "Start route" appears. Click on the map where the route is to begin. The message box now says "extend route." Click the next point for your route and continue until your route is completed.
+1. How do I draw a map? Staring at the blank map editor there is no clue where to begin creating a map. On the left side of the map editor there is a "list area" and there is a link that says "Route." Click that link and move your mouse over the map and the cursor changes to a cross hair and a small meesage box that say "Start route" appears. Click on the map where the route is to begin. The message box now says "extend route." Click the next point for your route and continue until your route is completed.
 Dismiss the "extend route" by a right mouse click or click the reset button.
-**I have a map how do I show it on my post?** if your map has a url (http or https) address head right on over to the Shortcode tab and add your map address in the url="" of the shortcode. 
-Most likely you will have a map file on your desktop in which case we will need to upload it to the plugin server. Open Map tools and select "Desktop upload." Upload your map and then go to the Shortcode tab and select the file you just uploaded.
-In both cases press CTRL-A and then CTRL-C to copy the shortcode to the clipboard. Not paste this shortcode into your post or page.
+2. I have a map how do I show it on my post? If your map has a url (http or https) address head right on over to the Shortcode tab and add your map address in the url="" of the shortcode. 
+Most likely however you will have a map file on your desktop which will need to be uploaded to the server. Open Map tools and select "Desktop upload." After the upload go to the Shortcode tab and select the file you just uploaded. It will be inserted into the shortcode.
+In either press CTRL-A and then CTRL-C to copy the shortcode to the clipboard. Now paste this shortcode into your post or page.
 
 
 == Screenshots ==
