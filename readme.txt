@@ -1,6 +1,6 @@
 === IBS Mappro ===
 Contributors: hmoore71
-Donate link: none
+Donate link:https://indianbendsolutions.net/donate/
 Plugin URI: https://indianbendsolutions.net/documentation/ibs-mappro-documentation/
 Author URI: https://indianbendsolutions.net/
 Tags: google maps, map editor, map viewer
@@ -29,6 +29,7 @@ Comprehensive map editor and viewers for the traveling journalist
 * Output GPX files with routes, tracks or both.
 * Combine or split route segments.
 * A route segments can combine different modes of travel.
+* See more at https://indianbendsolutions.net/documentation/ibs-mappro-documentation/
 
 Presently IBS Mappro is in its Beta phase of development and all testing and reporting of issues is appreciated.
 
