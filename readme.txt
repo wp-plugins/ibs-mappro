@@ -45,6 +45,8 @@ Dismiss the "extend route" by a right mouse click or click the reset button.
 2. I have a map how do I show it on my post? If your map has a url (http or https) address head right on over to the Shortcode tab and add your map address in the url="" of the shortcode. 
 Most likely however you will have a map file on your desktop which will need to be uploaded to the server. Open Map tools and select "Desktop upload." After the upload go to the Shortcode tab and select the file you just uploaded. It will be inserted into the shortcode.
 In either press CTRL-A and then CTRL-C to copy the shortcode to the clipboard. Now paste this shortcode into your post or page.
+3. How do I save my maps and icons before an upgrade? Maps can be downloaded to your desktop and reloaded after the upgrade. Icon can be be reuploaded after the upgrade.
+Another approach is to use FTP to save and restore the folders.
 
 
 == Screenshots ==
@@ -60,3 +62,8 @@ In either press CTRL-A and then CTRL-C to copy the shortcode to the clipboard. N
 (initial release)
 
 == Upgrade Notice ==
+Before upgrading please save the maps and icons folders.
+Otherwise you will lose your maps and added icons.
+
+
+
