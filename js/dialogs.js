@@ -483,6 +483,9 @@
                         this.dir = dialog.find('.save-dir').val();
                         this.dir = map.isGuest() ? 'share/' + this.dir : this.dir
                         this.filename = dialog.find('.save-name').val();
+                        if(false === getExtension(this.filename)){
+                            
+                        }
                         map.html['list'].find('a.file-list-name').text(this.filename);
                         this.setOptions(dialog);
                         dialog.dialog('close');

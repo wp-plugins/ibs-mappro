@@ -535,7 +535,6 @@ function File(arg) {
             download = false;
         var data = this.getXml();
         if (data) {
-
             $.post(this.options.map.options.ajax, {
                 action: 'ibs_mappro_savexml',
                 data: encodeURIComponent(data),

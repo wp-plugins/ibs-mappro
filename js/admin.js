@@ -447,6 +447,6 @@ jQuery(document).ready(function ($) {
                 result += $(item).attr('name') + '="' + $(item).val() + '" ';
             }
         });
-        $('#shortcode').val(result);
+        $('#shortcode').val(result+']');
     });
 });

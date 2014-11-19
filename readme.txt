@@ -60,6 +60,9 @@ Another approach is to use FTP to save and restore the folders.
 == Changelog ==
 
 (initial release)
+11/19/2014 fixed shortcode missing right bracket.
+11/19/2014 fixed missing file extension on save to server.
+11/19/2014 added align(left,center,right) option to shortcode.
 
 == Upgrade Notice ==
 Before upgrading please save the maps and icons folders.

@@ -538,6 +538,13 @@ class IBS_MAPPRO {
                     <div> <div>pid</div><input class="shortcode-input" type="text" placeholder="email tracking" name=pid" id="shortcode-pids"/> names of markers to track by email postings.</div>
                     <div> <div>width</div><input class="shortcode-input" type="text" placeholder="map width" name="width" value="550px" id="shortcode-width" /></div>
                     <div> <div>height</div><input class="shortcode-input" type="text" placeholder="map height" name="height" value="550px" id="shortcode-height" /></div>
+                    
+                    <div> <div>align</div><select class="shortcode-input" name="align" id="shortcode-align" >
+                            <option value="alignleft" selected >Align left</option>
+                            <option value="aligncenter">Align center</option>
+                            <option value="alignright">Align right</option>
+                        </select>
+                    </div>
                     <div> <div>url</div><input class="shortcode-input" type="text" placeholder="map url" name="url" value="" id="shortcode-url" /></div>
                 </div>
                 <div class="ibs-admin-bar" >&nbsp; Select map file</div>
@@ -575,6 +582,7 @@ class IBS_MAPPRO {
         $url = isset($atts['url']) && $atts['url'] ? $atts['url'] : '';
         $width = isset($atts['width']) && $atts['width'] ? $atts['width'] : '550px';
         $height = isset($atts['height']) && $atts['height'] ? $atts['height'] : '550px';
+        $align = isset($atts['align']) && $atts['align'] ? $atts['align'] : 'alignleft';
         $mode = isset($atts['mode']) && $atts['mode'] == 'edit' ? 'edit' : 'viewer';
         $user_type = isset($atts['user_type']) && $atts['user_type'] == 'admin' ? 'admin' : 'guest';
         $user_name = isset($atts['user_name']) ? $atts['user_name'] : '';
@@ -583,9 +591,9 @@ class IBS_MAPPRO {
 
         ob_start();
         if ($title !== '') {
-            echo '<div id="' . $div . '"><h1>' . $title . '</h1></div>';
+            echo "<div id='$div' class='$align'><h1>$title</h1></div>";
         } else {
-            echo '<div id="' . $div . '"></div>';
+            echo "<div id='$div' class='$align'></div>";
         }
         ?>
         <script type="text/javascript">

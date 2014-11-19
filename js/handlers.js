@@ -449,7 +449,7 @@
         });
 
         this.html['save-dialog'].on('change', '.save-name', {map: this}, function (event) {
-            event.data.map.html['save-dialog'].find('input[name="save_ext"]:radio').trigger('change');
+            event.data.map.html['save-dialog'].find('input[name="file_ext"]:radio').trigger('change');
         });
         this.html['save-dialog'].on('change', '.save-dir', {map: this}, function (event) {
             var dir = event.data.map.html['save-dialog'].find('.save-dir').val();
