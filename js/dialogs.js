@@ -253,8 +253,8 @@
                                                 .append($('<input>').addClass('map-web-url').attr({'type': 'text', 'title': 'enter url to load from the web', 'size': '50'}))))))
 
         this.html['web-dialog'] = this.html['dialogs'].find('.web-dialog');
-      
-       
+
+
         //----------------------------------------------------------------------
         // map context menus
         //----------------------------------------------------------------------
@@ -303,7 +303,7 @@
         this.html['distance-info'] = this.html['map'].find('.distance-info');
     };
 
-   
+
     Map.prototype.findDialog = function () {
         var dialog = this.html['find-dialog'];
         dialog.dialog({
@@ -339,16 +339,16 @@
                 $(this).dialog('destroy');
             },
             open: $.proxy(function () {
-                var dir = this.isGuest() ? "maps/share/" : "maps/";
+                var dir = this.isGuest() ? ibs_mappro.maps_path + "share/" : ibs_mappro.maps_path;
                 dialog.find('.map-browser').fileTree({
-                    root: this.siteRoot() + dir,
-                    script: this.options.ajax + '?action=ibs_mappro_folders&type=map',
+                    root: dir,
+                    script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=map',
                     folderEvent: 'click',
                     expandSpeed: 0,
                     collapseSpeed: 0,
                     multiFolder: false
                 }, $.proxy(function (file) {
-                    var map = file.replace(this.siteRoot(), this.siteUrl());
+                    var map = file.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
                     this.file.importFile(map);
                     dialog.dialog('close');
                 }, this),
@@ -383,14 +383,14 @@
                 $(this).dialog('destroy');
             },
             open: $.proxy(function () {
-                var initdir = this.siteRoot() + 'maps/upload/';
+                var initdir = ibs_mappro.maps_path + 'upload/';
                 dialog.find('.upload-target-directory').val('upload/');
                 this.uploader.fineUploader('setParams', {'dir': initdir});
                 if (this.isAdmin()) {
                     dialog.find('.admin').removeClass('hide');
                     dialog.find('.upload-browser').fileTree({
-                        root: this.siteRoot() + 'maps/',
-                        script: this.options.ajax + '?action=ibs_mappro_folders&type=dir',
+                        root: ibs_mappro.maps_path,
+                        script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=dir',
                         folderEvent: 'click',
                         expandSpeed: 1000,
                         collapseSpeed: 1000,
@@ -440,7 +440,7 @@
             }, this)
         });
     };
-   
+
     File.prototype.getOptions = function (dialog) {
         switch (getExtension(this.filename)) {
             case 'kmz':
@@ -483,8 +483,8 @@
                         this.dir = dialog.find('.save-dir').val();
                         this.dir = map.isGuest() ? 'share/' + this.dir : this.dir
                         this.filename = dialog.find('.save-name').val();
-                        if(false === getExtension(this.filename)){
-                            
+                        if (false === getExtension(this.filename)) {
+
                         }
                         map.html['list'].find('a.file-list-name').text(this.filename);
                         this.setOptions(dialog);
@@ -501,8 +501,8 @@
             },
             open: function () {
                 dialog.find('.mapfolder-browser').fileTree({
-                    root: map.getPath(),
-                    script: map.options.ajax + '?action=ibs_mappro_folders&type=dir',
+                    root: ibs_mappro.maps_path,
+                    script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=dir',
                     folderEvent: 'click',
                     expandSpeed: 0,
                     collapseSpeed: 0,

@@ -4,7 +4,7 @@
   Plugin URI: http://wordpress.org/extend/plugins/
   Description: implements Google Maps API V3 for Wordpress Adimin and shortcode.
   Author: Harry Moore
-  Version: 0.1
+  Version: 0.2
   Author URI: http://indianbendsolutions.com
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,70 +15,13 @@
   WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
-define('IBS_MAPPRO_VERSION', '0.1');
+define('IBS_MAPPRO_VERSION', '0.2');
 
+//
 register_activation_hook(__FILE__, 'ibs_mappro_activate');
 
 function ibs_mappro_activate() {
-    ibs_mappro_set_options();
-    if (false === get_option('ibs_mappro_icons')) {
-        ibs_mappro_set_icons();
-    }
-    if (false === get_option('ibs_mappro_garmin')) {
-        ibs_mappro_set_garmin();
-    }
-}
-
-function ibs_mappro_set_options() {
-    $options = get_option('ibs_mappro_options');
-    $arr = array(
-        "debug" => "no",
-        "ui_theme" => "cupertino",
-        "header" => "IBS Mappro",
-        "debug" => "yes",
-        "defaultAddress" => "",
-        "ui_theme" => "cupertino"
-    );
-    foreach ($arr as $key => $value) {
-        if (!isset($options[$key])) {
-            $options[$key] = $value;
-        }
-    }
-    update_option('ibs_mappro_options', $options);
-}
-
-function ibs_mappro_set_icons() {
-    $options = array();
-    $icons = IBS_MAPPRO::get_files(str_replace('\\', '/', plugin_dir_path(__FILE__)) . 'icons/kml_shapes');
-    $count = 0;
-    foreach ($icons as $icon) {
-        $path_parts = pathinfo($icon);
-        $basename = $path_parts['basename'];
-        $filename = $path_parts['filename'];
-        $options[$count++] = array('name' => $filename, 'url' => plugins_url("icons/kml_shapes/$basename", __FILE__));
-    }
-    update_option('ibs_mappro_icons', $options);
-}
-
-function ibs_mappro_set_garmin() {
-    //garmin symbols
-    require_once('lib/garmin_symbols.php');
-    $icons = IBS_MAPPRO::get_files(str_replace('\\', '/', plugin_dir_path(__FILE__)) . 'icons/garmin');
-    for ($i = 0; $i < count($garmin_symbols); $i++) {
-        $url = plugins_url('icons/kml_shapes/question.png', __FILE__);
-        foreach ($icons as $icon) {
-            $path_parts = pathinfo($icon);
-            $basename = $path_parts['basename'];
-            $filename = strtolower($path_parts['filename']);
-            $filename = str_replace('-', ' ', $filename);
-            if (strtolower($garmin_symbols[$i]) === $filename) {
-                $url = plugins_url("icons/garmin/$basename", __FILE__);
-                break;
-            }
-        }
-        $options[$i] = array('name' => $garmin_symbols[$i], 'url' => $url);
-    }
-    update_option('ibs_mappro_garmin', $options);
+    IBS_MAPPRO::activate();
 }
 
 register_deactivation_hook(__FILE__, 'ibs_mappro_deactivate');
@@ -90,44 +33,16 @@ function ibs_mappro_deactivate() {
 register_uninstall_hook(__FILE__, 'ibs_mappro_uninstall');
 
 function ibs_mappro_uninstall() {
-    delete_option('ibs_mappro_options');
-    delete_option('ibs_mappro_icons');
-    delete_option('ibs_mappro_garmin');
+    return;
 }
 
 class IBS_MAPPRO {
 
     static $add_script = 0;
-    static $debug = false;
-    static $ui_theme = "cupertino";
-    static $map_url = null;
-    static $map_ajax = null;
-    static $map_root = null;
     static $options = null;
 
-    static function get_root() {
-        //copied from wp-admin/includes/file.php
-        $home = set_url_scheme(get_option('home'), 'http');
-        $siteurl = set_url_scheme(get_option('siteurl'), 'http');
-        if (!empty($home) && 0 !== strcasecmp($home, $siteurl)) {
-            $wp_path_rel_to_home = str_ireplace($home, '', $siteurl); /* $siteurl - $home */
-            $pos = strripos(str_replace('\\', '/', $_SERVER['SCRIPT_FILENAME']), trailingslashit($wp_path_rel_to_home));
-            $home_path = substr($_SERVER['SCRIPT_FILENAME'], 0, $pos);
-            $home_path = trailingslashit($home_path);
-        } else {
-            $home_path = ABSPATH;
-        }
-        return str_replace('\\', '/', $home_path);
-    }
-
     static function init() {
-        $test = get_option('ibs_mappro_icons');
-        self::$map_url = plugins_url('ibs-mappro/');
-        self::$map_ajax = admin_url("admin-ajax.php");
-        self::$map_root = str_replace('\\', '/', plugin_dir_path(__FILE__));
         self::$options = get_option('ibs_mappro_options');
-        self::$debug = self::$options['debug'] == 'yes';
-        self::$ui_theme = self::$options['ui_theme'];
         add_action('admin_init', array(__CLASS__, 'options_init'));
         add_action('admin_menu', array(__CLASS__, 'add_admin_page'));
         add_action('admin_enqueue_scripts', array(__CLASS__, 'enqueue_admin_scripts'));
@@ -171,14 +86,160 @@ class IBS_MAPPRO {
         add_action('wp_ajax_nopriv_ibs_mappro_garmin', array(__CLASS__, 'garmin'));
     }
 
-    static function defaults_icons() {
-        
+    static function copy($source, $target) {
+        if (!is_dir($source)) {//it is a file, do a normal copy
+            copy($source, $target);
+            return;
+        }
+        @mkdir($target);
+        $d = dir($source);
+        $navFolders = array('.', '..');
+        while (false !== ($fileEntry = $d->read() )) {//copy one by one
+            //skip if it is navigation folder . or ..
+            if (in_array($fileEntry, $navFolders)) {
+                continue;
+            }
+            $s = "$source/$fileEntry";
+            $t = "$target/$fileEntry";
+            self::copy($s, $t);
+        }
+        $d->close();
+    }
+
+    static function base_path() {
+        $targetA = wp_upload_dir();
+        return $targetA['basedir'] . '/ibs-files/';
+    }
+
+    static function maps_path() {
+        $targetA = wp_upload_dir();
+        return $targetA['basedir'] . '/ibs-files/maps/';
+    }
+
+    static function maps_url() {
+        $targetA = wp_upload_dir();
+        return $targetA['baseurl'] . '/ibs-files/maps/';
+    }
+
+    static function icons_path() {
+        $targetA = wp_upload_dir();
+        return $targetA['basedir'] . '/ibs-files/icons/';
+    }
+
+    static function icons_url() {
+        $targetA = wp_upload_dir();
+        return $targetA['baseurl'] . '/ibs-files/icons/';
+    }
+
+    static function activate() {
+        //move icons and maps out of upgrade harm
+        if (!file_exists(self::base_path())) {
+            mkdir(self::base_path());
+        }
+        if (!file_exists(self::icons_path())) {
+            self::copy(plugin_dir_path(__FILE__) . 'icons/', self::icons_path());
+        }
+        if (!file_exists(self::maps_path())) {
+            self::copy(plugin_dir_path(__FILE__) . 'maps/', self::maps_path());
+        }
+        if (self::$options) {
+            if (isset(self::$options['version'])) {
+                switch (self::$options['version']) {
+                    case '0.1' : self::upgrade_0_2();
+                        break;
+                }
+            } else {
+                self::upgrade_0_2();
+            }
+        }
+
+        self::set_options();
+
+        if (false === get_option('ibs_mappro_icons')) {
+            self::set_icons();
+        }
+        if (false === get_option('ibs_mappro_garmin')) {
+            self::set_garmin();
+        }
+    }
+
+    static function set_options() {
+        $options = get_option('ibs_mappro_options');
+        $arr = array(
+            "debug" => "no",
+            "ui_theme" => "cupertino",
+            "header" => "IBS Mappro",
+            "debug" => "yes",
+            "defaultAddress" => "",
+            "ui_theme" => "cupertino"
+        );
+        foreach ($arr as $key => $value) {
+            if (!isset($options[$key])) {
+                $options[$key] = $value;
+            }
+        }
+        $options['version'] = IBS_MAPPRO_VERSION;
+        update_option('ibs_mappro_options', $options);
+        self::$options = $options;
+    }
+
+    static function set_icons() {
+        $options = array();
+        $icons = self::get_files(self::icons_path() . 'kml_shapes');
+        $count = 0;
+        foreach ($icons as $icon) {
+            $path_parts = pathinfo($icon);
+            $basename = $path_parts['basename'];
+            $filename = $path_parts['filename'];
+            $options[$count++] = array('name' => $filename, 'url' => self::icons_url() . "kml_shapes/$basename");
+        }
+        update_option('ibs_mappro_icons', $options);
+    }
+
+    static function set_garmin() {
+        //garmin symbols
+        require_once('lib/garmin_symbols.php');
+        $icons = self::get_files(self::icons_path() . 'garmin');
+        for ($i = 0; $i < count($garmin_symbols); $i++) {
+            $url = self::icons_url() . 'kml_shapes/question.png';
+            foreach ($icons as $icon) {
+                $path_parts = pathinfo($icon);
+                $basename = $path_parts['basename'];
+                $filename = strtolower($path_parts['filename']);
+                $filename = str_replace('-', ' ', $filename);
+                if (strtolower($garmin_symbols[$i]) === $filename) {
+                    $url = self::icons_url() . "garmin/$basename";
+                    break;
+                }
+            }
+            $options[$i] = array('name' => $garmin_symbols[$i], 'url' => $url);
+        }
+        update_option('ibs_mappro_garmin', $options);
+    }
+
+    static function upgrade_0_2() {
+        $icons = get_option('ibs_mappro_icons');
+        for ($i = 0; $i < count($icons); $i++) {
+            $url = $icons[$i]['url'];
+            $parts = pathinfo($url);
+            $more = pathinfo($parts['dirname']);
+            $icons[$i]['url'] = self::icons_url() . $more['basename'] . '/' . $parts['basename'];
+        }
+        update_option('ibs_mappro_icons', $icons);
+
+        $icons = get_option('ibs_mappro_garmin');
+        for ($i = 0; $i < count($icons); $i++) {
+            $url = $icons[$i]['url'];
+            $parts = pathinfo($url);
+            $more = pathinfo($parts['dirname']);
+            $icons[$i]['url'] = self::icons_url() . $more['basename'] . '/' . $parts['basename'];
+        }
+        update_option('ibs_mappro_garmin', $icons);
     }
 
     static function register_script() {
-        $min = self::$debug ? '' : '.min';
-        $minmax = self::$debug ? '.max' : '.min';
-        $theme = self::$ui_theme;
+        $min = isset(self::$options['debug']) && self::$options['debug'] === 'yes' ? '' : '.min';
+        $theme = isset(self::$options['ui_theme']) ? self::$options['ui_theme'] : 'cupertino';
         wp_register_style('ibs-map-ui-theme-style', plugins_url("css/jquery-ui-themes-1.11.1/themes/$theme/jquery-ui.min.css", __FILE__));
         wp_register_style("ibs-fineloader-style", plugins_url("js/jquery.fineuploader/css/fineuploader.css", __FILE__));
         wp_register_style("ibs-mappro-map-style", plugins_url("css/map.css", __FILE__));
@@ -215,7 +276,14 @@ class IBS_MAPPRO {
         wp_register_style('ibs-qtip-style', plugins_url("js/jquery.qtip.2.1.1/jquery.qtip.css", __FILE__));
         wp_register_script('ibs-qtip-script', plugins_url("js/jquery.qtip.2.1.1/jquery.qtip.min.js", __FILE__));
 
-        wp_localize_script('ibs-mappro-admin-script', 'ibs_mappro', array('ajax' => self::$map_ajax, 'site' => self::$map_url, 'root' => self::$map_root));
+        wp_localize_script('ibs-mappro-map-script', 'ibs_mappro', array(
+            'ajax' => admin_url("admin-ajax.php"),
+            'site' => plugins_url('ibs-mappro/'),
+            'maps_path' => self::maps_path(),
+            'maps_url' => self::maps_url(),
+            'icons_path' => self::icons_path(),
+            'icons_url' => self::icons_url()
+        ));
     }
 
     static $core_handles = array(
@@ -354,10 +422,10 @@ class IBS_MAPPRO {
     }
 
     static function field_debug() {
-        $checked = self::$debug ? "checked" : '';
+        $checked = isset(self::$options['debug']) && self::$options['debug'] === 'yes' ? 'checked' : '';
         echo '<p>determines whether to use minimized javascript</p>';
         echo '<input type="radio" name="ibs_mappro_options[debug]" value="yes" ' . $checked . '/>&nbspYes&nbsp&nbsp';
-        $checked = self::$debug ? '' : "checked";
+        $checked = isset(self::$options['debug']) && self::$options['debug'] === 'yes' ? '' : 'checked';
         echo '<input type="radio" name="ibs_mappro_options[debug]" value="no" ' . $checked . '/>&nbspNo';
     }
 
@@ -414,7 +482,7 @@ class IBS_MAPPRO {
             . "<input class='current-icon-url' type='hidden' value='$url' name='ibs_mappro_icons[$key][url]' /></li>";
         }
         echo '</ul></div></div>';
-        $libs = self::get_dirs(str_replace('\\', '/', plugin_dir_path(__FILE__)) . 'icons');
+        $libs = self::get_dirs(self::icons_path());
         echo '<div style=" height:100%; width:auto%; margin-left:320px;">';
         echo '<p> Available Icon Libraries </p>';
         echo '<select id="icon-library-select">';
@@ -447,7 +515,7 @@ class IBS_MAPPRO {
             . "<input class='garmin-icon-url' type='hidden' value='$url' name='ibs_mappro_garmin[$key][url]' /></li>";
         }
         echo '</ul></div></div>';
-        $libs = self::get_dirs(str_replace('\\', '/', plugin_dir_path(__FILE__)) . 'icons');
+        $libs = self::get_dirs(self::icons_path());
         echo '<div class="lib-select">';
         echo '<p> Available Icon Libraries </p>';
         echo '<select id="garmin-library-select">';
@@ -479,20 +547,28 @@ class IBS_MAPPRO {
                                         'div': '#ibs-admin-div',
                                         'width': ($('#ibs-map-tabs').width() - 40) + 'px',
                                         'height': '800',
-                                        'ajax': '<?PHP echo self::$map_ajax; ?>',
-                                        'site': '<?PHP echo self::$map_url; ?>',
-                                        'root': '<?PHP echo self::$map_root; ?>',
                                         'address': '<?PHP echo self::$options['defaultAddress']; ?>',
                                         'user_type': 'admin',
                                         'edit': true
                                     });
-                                } else {
+                                }
+                                break;
+                            default:
+                        }
+                    },
+                    activate: function (event, ui) {
+                        var tab = $(ui.newTab).find('a').text();
+                        switch (tab) {
+                            case 'Map':
+                                if (Mappro !== null) {
                                     Mappro.reset();
                                 }
                                 break;
                             default:
                         }
-                    }});
+                    }
+                }
+                );
                 $("#ibs-map-tabs").show();
             });
         </script>
@@ -511,9 +587,9 @@ class IBS_MAPPRO {
                 <form action="options.php" method="post">
                     <?php settings_fields('ibs_mappro_options'); ?>
                     <?php do_settings_sections('mappro-general'); ?>
-        <?php do_settings_sections('mappro-main'); ?>
-        <?php do_settings_sections('maps'); ?>
-        <?php submit_button(); ?>
+                    <?php do_settings_sections('mappro-main'); ?>
+                    <?php do_settings_sections('maps'); ?>
+                    <?php submit_button(); ?>
                 </form>
             </div>
             <div id="ibs-map-tab-map">
@@ -538,7 +614,7 @@ class IBS_MAPPRO {
                     <div> <div>pid</div><input class="shortcode-input" type="text" placeholder="email tracking" name=pid" id="shortcode-pids"/> names of markers to track by email postings.</div>
                     <div> <div>width</div><input class="shortcode-input" type="text" placeholder="map width" name="width" value="550px" id="shortcode-width" /></div>
                     <div> <div>height</div><input class="shortcode-input" type="text" placeholder="map height" name="height" value="550px" id="shortcode-height" /></div>
-                    
+
                     <div> <div>align</div><select class="shortcode-input" name="align" id="shortcode-align" >
                             <option value="alignleft" selected >Align left</option>
                             <option value="aligncenter">Align center</option>
@@ -556,16 +632,16 @@ class IBS_MAPPRO {
             <div id="ibs-map-tab-icons">
                 <form action="options.php" method="post">
                     <?php settings_fields('ibs_mappro_icons'); ?>
-        <?php do_settings_sections('icons'); ?>
-        <?php do_settings_sections('manage_icons'); ?>
-        <?php submit_button(); ?>
+                    <?php do_settings_sections('icons'); ?>
+                    <?php do_settings_sections('manage_icons'); ?>
+                    <?php submit_button(); ?>
                 </form>
             </div>
             <div id="ibs-map-tab-garmin">
                 <form action="options.php" method="post">
-        <?php settings_fields('ibs_mappro_garmin'); ?>
-        <?php do_settings_sections('garmin'); ?>
-        <?php submit_button(); ?>
+                    <?php settings_fields('ibs_mappro_garmin'); ?>
+                    <?php do_settings_sections('garmin'); ?>
+                    <?php submit_button(); ?>
                 </form>
             </div>
         </div>
@@ -598,7 +674,7 @@ class IBS_MAPPRO {
         ?>
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
-                if (typeof mapsobj == 'undefined') {
+                if (typeof mapsobj === 'undefined') {
                     var mappros = [];
                 }
                 mappros.push(new Map({
@@ -606,9 +682,6 @@ class IBS_MAPPRO {
                     'div': '#<?PHP echo $div; ?>',
                     'width': '<?PHP echo $width; ?>',
                     'height': '<?PHP echo $height; ?>',
-                    'ajax': '<?PHP echo self::$map_ajax; ?>',
-                    'site': '<?PHP echo self::$map_url; ?>',
-                    'root': '<?PHP echo self::$map_root; ?>',
                     'url': '<?PHP echo $url; ?>',
                     'user_type': '<?PHP echo $user_type; ?>',
                     'user_name': '<?PHP echo $user_name; ?>',
@@ -667,7 +740,7 @@ class IBS_MAPPRO {
         $data = $_REQUEST['data'];
         if ($data) {
             $data = urldecode($data);
-            $filename = self::$map_root . 'maps/' . $_REQUEST['filename'];
+            $filename = self::maps_path() . $_REQUEST['filename'];
             $path = pathinfo($filename);
             $ext = $path['extension'];
 
@@ -764,7 +837,8 @@ class IBS_MAPPRO {
                 if (file_exists($mapid)) {
                     $r = @unlink($mapid);
                     $mapid = str_replace('//', '/', $mapid);
-                    $item = str_replace(self::$map_root, '', $mapid) . PHP_EOL;
+                    $path = pathinfo($mapid);
+                    $item = $path['filename'] . PHP_EOL;
                     echo sprintf('File: %s removed.', $item);
                 } else {
                     echo sprintf('File: %s not found.', $mapid);
@@ -778,7 +852,8 @@ class IBS_MAPPRO {
                 foreach ($files as $file) { // iterate files
                     if (is_file($file)) {
                         $file = str_replace('//', '/', $file);
-                        $item = str_replace(self::$map_root, '', $file) . PHP_EOL;
+                        $path = pathinfo($file);
+                        $item = $path['filename'] . PHP_EOL;
                         $result .= $item;
                         @unlink($file); // delete file
                     }
@@ -823,7 +898,7 @@ class IBS_MAPPRO {
             echo "An error has occurred accessing this service";
         } else {
             if ($ext == 'kmz') {
-                $file = self::$map_root . 'maps/work/zip.zip';
+                $file = self::maps_path() . 'work/zip.zip';
                 $r = @unlink($file);
                 $handle = @fopen($file, "w");
                 $result = $handle;
@@ -871,14 +946,14 @@ class IBS_MAPPRO {
         if ($_REQUEST['lib']) {
             $lib = $_REQUEST['lib'];
             $result = array();
-            $icons = self::get_files(str_replace('\\', '/', plugin_dir_path(__FILE__)) . 'icons/' . $lib);
+            $icons = self::get_files(self::icons_path() . $lib);
             foreach ($icons as $icon) {
                 $path_parts = pathinfo($icon);
                 $dirname = $path_parts['dirname'];
                 $basename = $path_parts['basename'];
                 $extension = $path_parts['extension'];
                 $filename = $path_parts['filename'];
-                $url = plugins_url("icons/$lib/$basename", __FILE__);
+                $url = self::icons_url() . "$lib/$basename";
                 $result[$filename] = $url;
             }
             echo json_encode($result);
@@ -901,7 +976,10 @@ class IBS_MAPPRO {
 }
 
 IBS_MAPPRO::init();
-require_once(IBS_MAPPRO::get_root() . 'wp-admin/includes/class-pclzip.php');
+
+
+
+require_once(ABSPATH . 'wp-admin/includes/class-pclzip.php');
 
 //Postie filter for map tracking short codes
 
@@ -911,7 +989,7 @@ add_filter('postie_post_before', 'ibs_process_email_shortcodes');
 
 function ibs_handle_shortcode_spid($atts, $content = null) {
     $pids = get_option('ibs-where-is', array("jim" => "kansas city, mo", "joe" => "linden, tx", "bob" => "little rock, ar"));
-    foreach($atts as $key=>$value){
+    foreach ($atts as $key => $value) {
         $id = ucfirst(trim(str_replace('"', '', $key)));
         $loc = trim(str_replace('"', '', $value));
         $pids[$id] = $loc;

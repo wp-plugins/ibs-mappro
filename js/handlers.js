@@ -479,7 +479,7 @@
             var ext = getExtension(fileName).toLowerCase();
             if (ext === 'kml' || ext === 'kmz' || ext === 'gpx') {
                 var dir = map.html['upload-dialog'].find('.upload-target-directory').val();
-                dir = map.siteUrl() + 'maps/' + dir;
+                dir = ibs_mappro.maps_url + dir;
                 map.file.importFile(dir + fileName);
             }
         });
@@ -499,7 +499,7 @@
             var newdir = map.html['upload-dialog'].find('.upload-target-directory').val();
             newdir = newdir + "/";
             newdir = newdir.replace('//', '/');
-            map.html['upload-dialog'].find('.upload-target-directory').val(newdir.replace(map.siteRoot() + 'maps/', ''));
+            map.html['upload-dialog'].find('.upload-target-directory').val(newdir.replace(ibs_mappro.maps_path, ''));
             map.uploader.fineUploader('setParams', {'dir': newdir});
         });
         //----------------------------------------------------------------------

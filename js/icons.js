@@ -55,7 +55,7 @@
                 new google.maps.Point(6, 6)
                 );
         var me = this;
-        $.get(this.options.ajax,
+        $.get(ibs_mappro.ajax,
                 {'action': 'ibs_mappro_garmin'
                 },
         function (data, status) {
@@ -109,7 +109,7 @@
         return result;
     };
     Map.prototype.getIconOptions = function (list) {
-        $.get(this.options.ajax,
+        $.get(ibs_mappro.ajax,
                 {'action': 'ibs_mappro_icon_palette'
                 },
         function (data, status) {

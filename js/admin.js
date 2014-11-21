@@ -142,7 +142,7 @@ jQuery(document).ready(function ($) {
         listElement: $('#upload-list'),
         request: {
             endpoint: ibs_mappro.site + 'js/jquery.fineuploader/server/endpoint.php',
-            params: {'dir': ibs_mappro.root + 'maps/upload/'}
+            params: {'dir': ibs_mappro.maps_path + 'upload/'}
 
         },
         debug: false
@@ -164,7 +164,7 @@ jQuery(document).ready(function ($) {
         $('#icon-library-select').trigger('change');
     });
     $('#upload-target-directory').on('change', '', {}, function (event) {
-        var root = ibs_mappro.root + 'icons/';
+        var root = ibs_mappro.icons_path;
         var newdir = $('#upload-target-directory').val().replace(root, '');
         if (newdir.indexOf(root) === -1) {
             newdir = root + newdir;
@@ -203,11 +203,11 @@ jQuery(document).ready(function ($) {
                 $(this).dialog('destroy');
             },
             open: function () {
-                var initdir = ibs_mappro.root + 'icons/new/';
+                var initdir = ibs_mappro.icons_path + 'new/';
                 $('#upload-target-directory').val('new/');
                 uploader.fineUploader('setParams', {'dir': initdir});
                 $('#upload-browser').fileTree({
-                    root: ibs_mappro.root + 'icons/',
+                    root: ibs_mappro.icons_path,
                     script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=dir',
                     folderEvent: 'click',
                     expandSpeed: 1000,
@@ -249,7 +249,7 @@ jQuery(document).ready(function ($) {
                         $.get(ibs_mappro.ajax, {
                             'action': 'ibs_mappro_remove',
                             'type': 'files',
-                            'dir': ibs_mappro.root + 'icons/' + $('#clean-target-directory').val(),
+                            'dir': ibs_mappro.icons_path + $('#clean-target-directory').val(),
                             'files': files
                         }, function (data, status) {
                             $('#clean-browser').find('LI A.selected').remove();
@@ -260,7 +260,7 @@ jQuery(document).ready(function ($) {
                     $.get(ibs_mappro.ajax, {
                         action: 'ibs_mappro_remove',
                         type: 'directory',
-                        'dir': ibs_mappro.root + 'icons/' + $('#clean-target-directory').val()
+                        'dir': ibs_mappro.icons_path + $('#clean-target-directory').val()
                     }, function (data, status) {
                         $('#clean-browser').find('LI.expanded').remove();
                         var lib = $('#clean-target-directory').val().replace('/', '');
@@ -280,7 +280,7 @@ jQuery(document).ready(function ($) {
             },
             open: function () {
                 $('#clean-browser').fileTree({
-                    root: ibs_mappro.root + 'icons/',
+                    root: ibs_mappro.icons_path,
                     script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=all',
                     folderEvent: 'click',
                     expandSpeed: 0,
@@ -319,7 +319,7 @@ jQuery(document).ready(function ($) {
                         }
                     }
                 }, function (dir) {
-                    $('#clean-target-directory').val(dir.replace(ibs_mappro.root + 'icons/', ''));
+                    $('#clean-target-directory').val(dir.replace(ibs_mappro.icons_path, ''));
                 }
                 );
             }
@@ -350,7 +350,7 @@ jQuery(document).ready(function ($) {
                         $.get(ibs_mappro.ajax, {
                             'action': 'ibs_mappro_remove',
                             'type': 'files',
-                            'dir': ibs_mappro.root + 'maps/' + $('#map-target-directory').val(),
+                            'dir': ibs_mappro.maps_path + $('#map-target-directory').val(),
                             'files': files
                         }, function (data, status) {
                             $('#map-browser').find('LI A.selected').remove();
@@ -361,7 +361,7 @@ jQuery(document).ready(function ($) {
                     $.get(ibs_mappro.ajax, {
                         action: 'ibs_mappro_remove',
                         type: 'directory',
-                        'dir': ibs_mappro.root + 'maps/' + $('#map-target-directory').val()
+                        'dir': ibs_mappro.maps_path + $('#map-target-directory').val()
                     }, function (data, status) {
                         $('#map-browser').find('LI.expanded').remove();
                         var lib = $('#map-target-directory').val().replace('/', '');
@@ -376,7 +376,7 @@ jQuery(document).ready(function ($) {
             },
             open: function () {
                 $('#map-browser').fileTree({
-                    root: ibs_mappro.root + 'maps/',
+                    root: ibs_mappro.maps_path,
                     script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=all',
                     folderEvent: 'click',
                     expandSpeed: 0,
@@ -415,21 +415,21 @@ jQuery(document).ready(function ($) {
                         }
                     }
                 }, function (dir) {
-                    $('#map-target-directory').val(dir.replace(ibs_mappro.root + 'maps/', ''));
+                    $('#map-target-directory').val(dir.replace(ibs_mappro.maps_path, ''));
                 }
                 );
             }
         });
     });
     $('#shortcode-browser').fileTree({
-        root: ibs_mappro.root + 'maps/',
+        root: ibs_mappro.maps_path,
         script: ibs_mappro.ajax + '?action=ibs_mappro_folders&type=map',
         folderEvent: 'click',
         expandSpeed: 0,
         collapseSpeed: 0,
         multiFolder: false
     }, function (file) {
-        file = file.replace(ibs_mappro.root, ibs_mappro.site);
+        file = file.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
         $('#shortcode-url').val(file);
         $('#shortcode-url').trigger('change');
     }, function (dir) {

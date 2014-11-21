@@ -5,9 +5,6 @@ function Map(arg) {
     Map.prototype.init = function (arg) {
         this.options = {
             address: '',
-            ajax: null,
-            site: null,
-            root: null,
             div: 'body',
             top: 0,
             left: 0,
@@ -38,10 +35,10 @@ function Map(arg) {
             this.options[attr] = arg[attr];
         }
         this.siteRoot = function () {
-            return this.options.root;
+            return ibs_mappro.root;
         };
         this.siteUrl = function () {
-            return this.options.site;
+            return ibs_mappro.site;
         };
         this.html = [];
         this.garmin_symbols = null;
@@ -161,8 +158,8 @@ function Map(arg) {
             return this.options.user_type;
         };
         this.getPath = function () {
-            var folder = this.isAdmin() ? 'maps/' : 'maps/share/';
-            return this.options.root + folder;
+            var folder = this.isAdmin() ? '' : 'share/';
+            return this.options.maps_path + folder;
         };
         this.getUserFolder = function () {
             if (this.options.user_name !== 'unknown' && this.options.user_name !== '' && /^[a-z0-9_-]{3,16}$/.test(this.options.user_name))

@@ -70,7 +70,7 @@
                         .append($('<span>').addClass('data-segment'))
                         .append($('<span>').addClass('data-distance'))
                         .append($('<span>').addClass('data-gain'))
-                        .append($('<img>').addClass('chart-close').css('float', 'right').attr('src', this.siteUrl() + 'image/minus.png')))
+                        .append($('<img>').addClass('chart-close').css('float', 'right').attr('src', ibs_mappro.site + 'image/minus.png')))
                 .append($('<div>').addClass('data-chart'));
         this.html['data-chart'] = $(this.html['data']).find('.data-chart');
         this.html['map']
@@ -235,7 +235,7 @@
             label: 'Color ',
             hide: true
         });
-        this.html['dialogs'].find('.cp-cancel').attr('src', this.siteUrl() + '/image/cancel.png');
+        this.html['dialogs'].find('.cp-cancel').attr('src', ibs_mappro.site +'image/cancel.png');
         this.html['cuesheet-dialog'].find('input[name=cue_source][value=' + this.options.cuesheet_source + ']').attr('checked', true);
         $(this.html['file-dialog']).find('.reset-lines').button({
             text: true,
@@ -248,7 +248,7 @@
             listElement: this.html['upload-dialog'].find('.upload-list'),
             request: {
                 endpoint: this.siteUrl() + 'js/jquery.fineuploader/server/endpoint.php',
-                params: {'dir': this.siteRoot() + 'maps/upload/'}
+                params: {'dir': ibs_mappro.maps_path + 'upload/'}
 
             },
             debug: false

@@ -49,7 +49,7 @@ function File(arg) {
     };
     File.prototype.importFile = function (url) {
         spin(true);
-        $.post(this.options.map.options.ajax, {
+        $.post(ibs_mappro.ajax, {
             action: 'ibs_mappro_CORS',
             path: url,
             cache: false
@@ -264,7 +264,7 @@ function File(arg) {
         if (this.options.map.options.pid !== '') {
             var results = [];
 
-            $.post(this.options.map.options.ajax, {
+            $.post(ibs_mappro.ajax, {
                 action: 'ibs_mappro_pid',
                 pid: this.options.map.options.pid,
             }, $.proxy(function (data, status) {
@@ -535,7 +535,7 @@ function File(arg) {
             download = false;
         var data = this.getXml();
         if (data) {
-            $.post(this.options.map.options.ajax, {
+            $.post(ibs_mappro.ajax, {
                 action: 'ibs_mappro_savexml',
                 data: encodeURIComponent(data),
                 filename: this.dir + this.filename
