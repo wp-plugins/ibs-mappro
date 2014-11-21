@@ -64,6 +64,7 @@ Another approach is to use FTP to save and restore the folders.
 11/19/2014 fixed missing file extension on save to server.
 11/19/2014 added align(left,center,right) option to shortcode.
 11/21/2014 move data files out of plugin folder.
+11/21/2004 use wp_filesystem.
 
 == Upgrade Notice ==
 Before upgrading please save the maps and icons folders.

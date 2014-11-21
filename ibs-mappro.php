@@ -87,15 +87,25 @@ class IBS_MAPPRO {
     }
 
     static function copy($source, $target) {
+        global $wp_filesystem;
         if (!is_dir($source)) {//it is a file, do a normal copy
-            copy($source, $target);
+            //param: string $source Path to the source file.
+            //param: string $destination Path to the destination file.
+            //param: bool $overwrite Optional. Whether to overwrite the destination file if it exists.
+            //param: int $mode Optional. The permissions as octal number, usually 0644 for files, 0755 for dirs.
+            //return: bool True if file copied successfully, False otherwise .
+            $wp_filesystem->copy($source, $target, true, FS_CHMOD_FILE);
             return;
         }
-        @mkdir($target);
+        //param: string $path Path for new directory.
+        //param: mixed $chmod Optional. The permissions as octal number, (or False to skip chmod)
+        //param: mixed $chown Optional. A user name or number (or False to skip chown)
+        //param: mixed $chgrp Optional. A group name or number (or False to skip chgrp).
+        //return: bool False if directory cannot be created, true otherwise .
+        $wp_filesystem->mkdir($target);
         $d = dir($source);
         $navFolders = array('.', '..');
         while (false !== ($fileEntry = $d->read() )) {//copy one by one
-            //skip if it is navigation folder . or ..
             if (in_array($fileEntry, $navFolders)) {
                 continue;
             }
@@ -131,25 +141,35 @@ class IBS_MAPPRO {
         return $targetA['baseurl'] . '/ibs-files/icons/';
     }
 
+    static function file_credentials() {
+        $in = true;
+        $url = wp_nonce_url('options-general.php?page=filewriting', 'ibs-nonce');
+        if (false === ($creds = request_filesystem_credentials($url, '', false, false, null))) {
+            $in = false;
+        }
+        if ($in && !WP_Filesystem($creds)) {
+            request_filesystem_credentials($url, '', true, false, null);
+            $in = false;
+        }
+        return $in;
+    }
+
     static function activate() {
-        //move icons and maps out of upgrade harm
-        if (!file_exists(self::base_path())) {
-            mkdir(self::base_path());
-        }
-        if (!file_exists(self::icons_path())) {
-            self::copy(plugin_dir_path(__FILE__) . 'icons/', self::icons_path());
-        }
-        if (!file_exists(self::maps_path())) {
-            self::copy(plugin_dir_path(__FILE__) . 'maps/', self::maps_path());
-        }
-        if (self::$options) {
-            if (isset(self::$options['version'])) {
-                switch (self::$options['version']) {
-                    case '0.1' : self::upgrade_0_2();
-                        break;
+        global $wp_filesystem;
+        if (!file_exists(self::base_path()) || !file_exists(self::icons_path()) || !file_exists(self::maps_path())) {
+            if (self::file_credentials()) {
+                if (!file_exists(self::base_path())) {
+                    $wp_filesystem->mkdir(self::base_path());
                 }
+                if (!file_exists(self::icons_path())) {
+                    self::copy(plugin_dir_path(__FILE__) . 'icons/', self::icons_path());
+                }
+                if (!file_exists(self::maps_path())) {
+                    self::copy(plugin_dir_path(__FILE__) . 'maps/', self::maps_path());
+                }
+                self::fix_icon_options();
             } else {
-                self::upgrade_0_2();
+                add_action('admin_notice', array(__CLASS__, 'activate_failure'));
             }
         }
 
@@ -161,6 +181,14 @@ class IBS_MAPPRO {
         if (false === get_option('ibs_mappro_garmin')) {
             self::set_garmin();
         }
+    }
+
+    static function activate_failure() {
+        ?>
+        <div class="updated">
+            <p><?php echo 'Activate could not move map and icon folders'; ?></p>
+        </div>
+        <?php
     }
 
     static function set_options() {
@@ -217,7 +245,7 @@ class IBS_MAPPRO {
         update_option('ibs_mappro_garmin', $options);
     }
 
-    static function upgrade_0_2() {
+    static function fix_icon_options() {
         $icons = get_option('ibs_mappro_icons');
         for ($i = 0; $i < count($icons); $i++) {
             $url = $icons[$i]['url'];
