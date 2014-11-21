@@ -6,7 +6,7 @@ Author URI: https://indianbendsolutions.net/
 Tags: google maps, map editor, map viewer
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,10 +63,13 @@ Another approach is to use FTP to save and restore the folders.
 11/19/2014 fixed shortcode missing right bracket.
 11/19/2014 fixed missing file extension on save to server.
 11/19/2014 added align(left,center,right) option to shortcode.
+11/21/2014 move data files out of plugin folder.
 
 == Upgrade Notice ==
 Before upgrading please save the maps and icons folders.
-Otherwise you will lose your maps and added icons.
+Otherwise you could lose your stored sever maps and any added icons.
+0.2 fixes this issue but you may have to rebuild your Icon Palette and redo the Garmin symbol mapping.
+0.2 copies existing maps and icon libraries from the plugin folder so upgrades preserve your work.
 
 
 
