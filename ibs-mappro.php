@@ -760,55 +760,50 @@ class IBS_MAPPRO {
 
 //ajax interface        
 
-    static function upload() {
-        require_once('upload.html.php');
-    }
-
     static function savexml() {
         $data = $_REQUEST['data'];
         if ($data) {
-            $data = urldecode($data);
-            $filename = self::maps_path() . $_REQUEST['filename'];
-            $path = pathinfo($filename);
-            $ext = $path['extension'];
-
-            $dir = $path['dirname'];
-            if (!is_dir($dir)) {
-                if (!mkdir($dir)) {
-                    echo "Failed to save map. Could not create folder.";
-                    return;
-                }
-            }
-            if ($ext == 'kmz') {
-                $zip = new ZipArchive();
-                if (file_exists($filename)) {
-                    $zip->open($filename, ZIPARCHIVE::OVERWRITE);
-                } else {
-                    $zip->open($filename, ZIPARCHIVE::CREATE);
-                }
-                $zip->addFromString($path['filename'] . '.maps', $data);
-                $zip->close();
-                echo basename($filename);
-                return;
-            } else {
-                $message . + ' file action.';
-                $r = unlink($filename);
-                $handle = @fopen($filename, "w");
-                $result = $handle;
-                if ($result && 1 == 1) {
-                    $result = fwrite($handle, $data);
-                    fclose($handle);
-                    if ($result) {
-                        echo basename($filename);
-                        return;
+            if (self::file_credentials()) {
+                global $wp_filesystem;
+                $data = urldecode($data);
+                $filename = self::maps_path() . $_REQUEST['filename'];
+                $path = pathinfo($filename);
+                $ext = $path['extension'];
+                $dir = $path['dirname'];
+                if (!is_dir($dir)) {
+                    if (!$wp_filesystem->mkdir($dir)) {
+                        echo "Failed to save map. Could not create folder.";
+                        exit;
                     }
                 }
+                if ($ext == 'kmz') {
+                    $zip = new ZipArchive();
+                    if (file_exists($filename)) {
+                        $zip->open($filename, ZIPARCHIVE::OVERWRITE);
+                    } else {
+                        $zip->open($filename, ZIPARCHIVE::CREATE);
+                    }
+                    $zip->addFromString($path['filename'] . '.maps', $data);
+                    $zip->close();
+                    echo basename($filename);
+                    exit;
+                } else {
+                    $message . + ' file action.';
+                    $r = unlink($filename);
+                    if ($wp_filesystem->put_contents($filename, $data, FS_CHMOD_FILE)) {
+                        echo basename($filename);
+                        exit;
+                    }
+                }
+                echo 'Error writing file' . basename($filename);
+                exit;
             }
-            echo 'Error writing file' . basename($filename);
-            return;
+            echo 'No file permissions';
+            exit;
+        } else {
+            echo 'Missing data';
+            exit;
         }
-        echo 'Missing data';
-        exit;
     }
 
     static function folders() {
@@ -924,34 +919,36 @@ class IBS_MAPPRO {
         curl_close($ch);
         if ($headers['http_code'] != '200') {
             echo "An error has occurred accessing this service";
+            exit;
         } else {
             if ($ext == 'kmz') {
-                $file = self::maps_path() . 'work/zip.zip';
-                $r = @unlink($file);
-                $handle = @fopen($file, "w");
-                $result = $handle;
-                if ($result) {
-                    $result = fwrite($handle, $data);
-                    fclose($handle);
-                    if ($result) {
+                if (self::file_credentials()) {
+                    global $wp_filesystem;
+                    $file = self::maps_path() . 'work/zip.zip';
+                    $r = @unlink($file);
+                    if ($wp_filesystem->put_contents($file, $data, FS_CHMOD_FILE)) {
                         $archive = new PclZip($file);
                         $buf = $archive->extract(PCLZIP_OPT_EXTRACT_AS_STRING);
                         if ($buf == 0) {
                             echo 'failed to unzip kmz file.';
+                            exit;
                         } else {
                             echo $buf[0]['content'];
+                            exit;
                         }
                     } else {
                         echo 'failed to open kmz file.';
+                        exit;
                     }
                 } else {
-                    echo 'failed to open kmz file.';
+                    echo 'No permission.';
+                    exit;
                 }
             } else {
                 echo $data;
+                exit;
             }
         }
-        exit;
     }
 
     static function pid() {
