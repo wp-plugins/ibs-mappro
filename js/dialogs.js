@@ -307,7 +307,6 @@
     Map.prototype.findDialog = function () {
         var dialog = this.html['find-dialog'];
         dialog.dialog({
-            position: ['center', 'top'],
             autoOpen: true,
             modal: false,
             width: 'auto',
@@ -472,7 +471,6 @@
         dialog.find('.save-dir').val(map.getUserFolder());
         dialog.find('.save-desc').val(this.desc);
         dialog.dialog({
-            position: ['center', 'center'],
             autoOpen: true,
             modal: true,
             width: 'auto',
@@ -542,7 +540,6 @@
         var config = this.options.map.getCkeditorConfig()
         setCurrentColor(dialog);
         dialog.dialog({
-            position: ['center', 'center'],
             autoOpen: true,
             modal: true,
             width: 'auto',
@@ -591,7 +588,6 @@
         dialog.find('.file-name').val(this.filename).attr({'disabled': true});
         dialog.find('.file-desc').html(this.desc);
         dialog.dialog({
-            position: ['center', 'center'],
             autoOpen: true,
             modal: true,
             width: 'auto',

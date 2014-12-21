@@ -181,7 +181,6 @@ jQuery(document).ready(function ($) {
     $('#ibs-upload-action').on('click', '', {}, function (event) {
         var dialog = $('#upload-dialog');
         dialog.dialog({
-            position: {my: "center", at: "top", of: window},
             autoOpen: true,
             width: 'auto',
             modal: true,
@@ -234,7 +233,6 @@ jQuery(document).ready(function ($) {
     $('#ibs-clean-action').on('click', '', {}, function (event) {
         $('#clean-target-directory').val('')
         $('#clean-dialog').dialog({
-            position: {my: "center", at: "center", of: window},
             autoOpen: true,
             width: 'auto',
             modal: true,
@@ -336,7 +334,6 @@ jQuery(document).ready(function ($) {
     $('#ibs-map-manage').on('click', '', {}, function (event) {
         $('#map-target-directory').val('')
         $('#map-dialog').dialog({
-            position: {my: "center", at: "center", of: window},
             autoOpen: true,
             width: 'auto',
             modal: true,
