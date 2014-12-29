@@ -546,13 +546,15 @@ function File(arg) {
                 if (status === 'success') {
                     this.setDirty(false);
                     if (download) {
-                        $.fileDownload(this.options.map.siteUrl() + 'lib/download.php?file=maps/' + this.dir + this.filename, {
+                        var data_url = decodeURIComponent(data);
+                        var file_url = this.options.map.siteUrl() + 'lib/download.php?file='+ data_url;
+                        $.fileDownload(file_url, {
                             successCallback: $.proxy(function (url) {
                                 this.options.map.notice('Save ' + this.filename + ' completed.');
                             }, this),
-                            failCallback: function (html, url) {
+                            failCallback: $.proxy(function (html, url) {
                                 this.options.map.alert('File download failed. ' + this.filename);
-                            }
+                            }, this)
                         });
                     } else {
                         this.options.map.notice('Save ' + this.filename + ' completed.');

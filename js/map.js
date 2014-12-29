@@ -494,7 +494,6 @@ function Map(arg) {
                         .append(jQuery('<img>').attr('src', this.siteUrl() + 'image/alert-white.png').css({'float': 'left', 'margin-right': '5px'}))
                         .append(jQuery('<span>').html(message)));
         jQuery(dd).dialog({
-            position: ['center', 'top'],
             autoOpen: true,
             modal: true,
             buttons: {
@@ -513,7 +512,6 @@ function Map(arg) {
                         .append(jQuery('<img>').attr('src', this.siteUrl() + 'image/alert-white.png').css({'float': 'left', 'margin-right': '5px'}))
                         .append(jQuery('<span>').html(message)));
         jQuery(dd).dialog({
-            position: ['center', 'top'],
             autoOpen: true,
             modal: true,
             buttons: {
@@ -538,7 +536,6 @@ function Map(arg) {
                         .append(jQuery('<span>').css({'float': 'left', 'margin-right': '5px'}).html(message))
                         .append(jQuery('<input>').attr({'id': 'answer', 'type': 'text', 'size': '30', 'value': ''})));
         jQuery(dd).dialog({
-            position: ['center', 'top'],
             autoOpen: true,
             modal: true,
             buttons: {
@@ -566,7 +563,6 @@ function Map(arg) {
                         .append(jQuery('<img>').attr('src', this.siteUrl() + 'image/notice.png').css({'float': 'left', 'margin-right': '5px'}))
                         .append(jQuery('<span>').html(message)));
         jQuery(dd).dialog({
-            position: ['center', 'top'],
             autoOpen: true,
             modal: false,
             show: {

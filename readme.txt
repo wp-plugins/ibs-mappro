@@ -6,7 +6,7 @@ Author URI: https://indianbendsolutions.net/
 Tags: google maps, map editor, map viewer
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,7 @@ Another approach is to use FTP to save and restore the folders.
 11/21/2014 move data files out of plugin folder.
 11/21/2004 use wp_filesystem.
 12/20/2014 4.1 fixes to jquery ui dialog position changes
+12/29/2014 version 0.4 fixes download issues. 
 == Upgrade Notice ==
 Before upgrading please save the maps and icons folders.
 Otherwise you could lose your stored sever maps and any added icons.

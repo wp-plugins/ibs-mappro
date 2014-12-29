@@ -4,7 +4,7 @@
   Plugin URI: http://wordpress.org/extend/plugins/
   Description: implements Google Maps API V3 for Wordpress Adimin and shortcode.
   Author: Harry Moore
-  Version: 0.3
+  Version: 0.4
   Author URI: http://indianbendsolutions.com
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@
   WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
-define('IBS_MAPPRO_VERSION', '0.2');
+define('IBS_MAPPRO_VERSION', '0.4');
 
 //
 register_activation_hook(__FILE__, 'ibs_mappro_activate');
@@ -283,6 +283,7 @@ class IBS_MAPPRO {
         wp_register_script("ibs-dropdown-script", plugins_url("js/jquery.dropdown/jquery.dropdown.min.js", __FILE__));
         wp_register_script("ibs-scrollto-script", plugins_url("js/balupton-jquery-scrollto-a30313e/lib/jquery-scrollto.js", __FILE__));
         wp_register_script("ibs-mappro-markermanager-script", plugins_url("js/markermanager$min.js", __FILE__));
+        wp_register_script("ibs-mappro-script", plugins_url("js/mappro.js", __FILE__));
         wp_register_script("ibs-mappro-xmlwrite-script", plugins_url("js/xmlwriter$min.js", __FILE__));
         wp_register_script("ibs-mappro-purl-script", plugins_url("js/purl$min.js", __FILE__));
         wp_register_script("ibs-mappro-gpx-script", plugins_url("js/gpx$min.js", __FILE__));
@@ -370,7 +371,6 @@ class IBS_MAPPRO {
         if ($page === 'settings_page_ibs_mappro') {
             wp_enqueue_style(self::$style_handles);
             wp_enqueue_script(self::$script_handles);
-
             wp_enqueue_style('ibs-qtip-style');
             wp_enqueue_script('ibs-qtip-script');
 
@@ -762,6 +762,7 @@ class IBS_MAPPRO {
 
     static function savexml() {
         $data = $_REQUEST['data'];
+        $message = 'Message: ';
         if ($data) {
             if (self::file_credentials()) {
                 global $wp_filesystem;
@@ -785,13 +786,13 @@ class IBS_MAPPRO {
                     }
                     $zip->addFromString($path['filename'] . '.maps', $data);
                     $zip->close();
-                    echo basename($filename);
+                    echo urlencode($filename);
                     exit;
                 } else {
                     $message . + ' file action.';
-                    $r = unlink($filename);
+                    $r = @unlink($filename);
                     if ($wp_filesystem->put_contents($filename, $data, FS_CHMOD_FILE)) {
-                        echo basename($filename);
+                        echo urlencode($filename);
                         exit;
                     }
                 }

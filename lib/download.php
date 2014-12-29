@@ -13,9 +13,7 @@ function getRoot() {
 }
 
 if (isset($_GET)) {
-    $root = getRoot();
-    $root = str_replace("lib/download.php/", '', $root);
-    $filename = $root . $_GET['file'];
+    $filename = $_GET['file'];
     $info = pathinfo($filename);
     $name = $info['basename'];
     if (file_exists($filename)) {
