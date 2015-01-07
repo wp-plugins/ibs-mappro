@@ -1,5 +1,5 @@
-﻿/*
-* jQuery File Download Plugin v1.4.2 
+/*
+* jQuery File Download Plugin v1.4.3 
 *
 * http://www.johnculviner.com
 *
@@ -7,6 +7,11 @@
 *
 * Licensed under the MIT license:
 *   http://www.opensource.org/licenses/mit-license.php
+*
+* !!!!NOTE!!!!
+* You must also write a cookie in conjunction with using this plugin as mentioned in the orignal post:
+* http://johnculviner.com/jquery-file-download-plugin-for-ajax-like-feature-rich-file-downloads/
+* !!!!NOTE!!!!
 */
 
 (function($, window){
@@ -19,7 +24,7 @@
 				'\r': "#13;",
 				'\n': "#10;",
 				'"': 'quot;',
-				"'": 'apos;' /*single quotes just to be safe*/
+				"'": '#39;' /*single quotes just to be safe, IE8 doesn't support &apos;, so use &#39; instead */
 	};
 
 $.extend({
@@ -45,6 +50,7 @@ $.extend({
             //the stock android browser straight up doesn't support file downloads initiated by a non GET: http://code.google.com/p/android/issues/detail?id=1780
             //specify a message here to display if a user tries with an android browser
             //if jQuery UI is installed this will be a dialog, otherwise it will be an alert
+            //Set to null to disable the message and attempt to download anyway
             //
             androidPostUnsupportedMessageHtml: "Unfortunately your Android browser doesn't support this type of file download. Please try again with a different browser.",
 
@@ -109,6 +115,12 @@ $.extend({
             cookiePath: "/",
 
             //
+            //if specified it will be used when attempting to clear the above name value pair
+            //useful for when downloads are being served on a subdomain (e.g. downloads.example.com)
+            //	
+            cookieDomain: null,
+
+            //
             //the title for the popup second window as a download is processing in the case of a mobile browser
             //
             popupWindowTitle: "Initiating file download...",
@@ -148,7 +160,7 @@ $.extend({
 
         var httpMethodUpper = settings.httpMethod.toUpperCase();
 
-        if (isAndroid && httpMethodUpper !== "GET") {
+        if (isAndroid && httpMethodUpper !== "GET" && settings.androidPostUnsupportedMessageHtml) {
             //the stock android browser straight up doesn't support file downloads initiated by non GET requests: http://code.google.com/p/android/issues/detail?id=1780
 
             if ($().dialog) {
@@ -322,9 +334,12 @@ $.extend({
                 //execute specified callback
                 internalCallbacks.onSuccess(fileUrl);
 
-                //remove the cookie and iframe
-                document.cookie = settings.cookieName + "=; expires=" + new Date(1000).toUTCString() + "; path=" + settings.cookiePath;
+                //remove cookie
+                var cookieData = settings.cookieName + "=; path=" + settings.cookiePath + "; expires=" + new Date(0).toUTCString() + ";";
+                if (settings.cookieDomain) cookieData += " domain=" + settings.cookieDomain + ";";
+                document.cookie = cookieData;
 
+                //remove iframe
                 cleanUp(false);
 
                 return;
@@ -346,16 +361,27 @@ $.extend({
                         if ($form && $form.length) {
                             var $contents = $(formDoc.body).contents().first();
 
-                            if ($contents.length && $contents[0] === $form[0]) {
-                                isFailure = false;
-                            }
+                            try {
+                                if ($contents.length && $contents[0] === $form[0]) {
+                                    isFailure = false;
+                                }
+                            } catch (e) {
+                                if (e && e.number == -2146828218) {
+                                    // IE 8-10 throw a permission denied after the form reloads on the "$contents[0] === $form[0]" comparison
+                                    isFailure = true;
+                                } else {
+                                    throw e;
+                                }
+                            } 
                         }
 
                         if (isFailure) {
-                            internalCallbacks.onFail(formDoc.body.innerHTML, fileUrl);
-
-                            cleanUp(true);
-
+                            // IE 8-10 don't always have the full content available right away, they need a litle bit to finish
+                            setTimeout(function () {
+                                internalCallbacks.onFail(formDoc.body.innerHTML, fileUrl);
+                                cleanUp(true);
+                            }, 100);
+                            
                             return;
                         }
                     }
@@ -396,9 +422,11 @@ $.extend({
                     }
 
                     if (isIos) {
-                        downloadWindow.focus(); //ios safari bug doesn't allow a window to be closed unless it is focused
-                        if (isFailure) {
-                            downloadWindow.close();
+                        if (downloadWindow.focus) {
+                            downloadWindow.focus(); //ios safari bug doesn't allow a window to be closed unless it is focused
+                            if (isFailure) {
+                                downloadWindow.close();
+                            }
                         }
                     }
                 }
@@ -418,8 +446,12 @@ $.extend({
                 return '&' + htmlSpecialCharsPlaceHolders[match];
         	});
         }
-
-        return deferred.promise();
+        var promise = deferred.promise();
+        promise.abort = function() {
+            cleanUp();
+            $iframe.remove();
+        };
+        return promise;
     }
 });
 
