@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name><![CDATA[segments]]></name>
+    <open>1</open>
+    <description><![CDATA[segment lines]]></description>
+    <Style id="IconStyle-001">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="IconStyle-002">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/micons/grn-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="IconStyle-003">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/micons/red-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="IconStyle-004">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/micons/ylw-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="IconStyle-005">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/micons/ltblu-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="IconStyle-006">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/micons/blue-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="LineStyle-001">
+      <LineStyle>
+        <color>660000ff</color>
+        <width>7</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>660000ff</color>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>Placemarks</name>
+      <description>placemarks</description>
+      <Placemark>
+        <name><![CDATA[S1001 1000]]></name>
+        <description><![CDATA[Start - 3669 East Sylvane Street, Tucson, AZ 85713, USA]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.91403000000003,32.20022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1001]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.00&nbsp;</td><td style="text-align:center;">&nbsp;ft&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;0.00&nbsp;</td><td style="text-align:center;">&nbsp;ft&nbsp;</td><td>&nbsp;Head <b>west</b> on <b>E Sylvane St</b> toward <b>S Citation Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.91403000000003,32.20022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1002]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.23&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;0.23&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>S Palo Verde Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.91403000000003,32.20022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1003]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.03&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;0.26&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>E Silverlake Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.91403000000003,32.20022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1004]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.36&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;0.62&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>S Camilla Stravenue</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.91403000000003,32.20022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1005]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.19&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;0.81&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Aviation Bikeway</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.93493999999998,32.20297,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1006]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.92&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;2.73&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> toward <b>S Highland Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94396,32.20864,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1007]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.02&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;2.74&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>S Highland Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94396,32.20864,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1008]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.16&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;3.90&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>Santa Rita Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1009]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.09&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;3.99&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>E University Blvd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1010]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.03&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;4.02&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>N Highland Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1011]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.28&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;4.30&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Take the pedestrian tunnel&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1012]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.11&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;4.41&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>E Helen St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1013]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.09&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;4.50&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>N Mountain Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95101,32.23041,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1014]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;3.42&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;7.93&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>right</b> onto <b>The Loop</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95281,32.288230000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1015]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.03&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;7.96&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> toward <b>The Loop</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95281,32.288230000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1016]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.08&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;8.03&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>The Loop</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95281,32.288230000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1017]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.55&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;8.58&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>left</b> to stay on <b>The Loop</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95281,32.288230000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1018]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;2.17&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;10.75&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>right</b> to stay on <b>The Loop</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.99135000000001,32.29341,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1019]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.04&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;10.80&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>N La Cañada Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.99135000000001,32.29341,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1020]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;5.93&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;16.72&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>W Linda Vista Blvd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.99547000000001,32.382380000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1021]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.01&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;16.73&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Cañada del Oro River Park</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.99547000000001,32.382380000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1022]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.38&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;17.11&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> to stay on <b>Cañada del Oro River Park</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.99547000000001,32.382380000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1023]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.70&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;18.82&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> to stay on <b>Cañada del Oro River Park</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95749,32.402010000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1024]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.42&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;19.24&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>left</b> to stay on <b>Cañada del Oro River Park</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95749,32.402010000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1025]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.52&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;19.76&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> to stay on <b>Cañada del Oro River Park</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.95749,32.402010000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1026]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;2.50&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;22.26&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> toward <b>E Innovation Park Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94846000000001,32.42696,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1027]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.17&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;22.43&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>E Innovation Park Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94846000000001,32.42696,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1028]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.29&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;23.72&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>E Vistoso Commerce Loop Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94481000000002,32.437070000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1029]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.44&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;24.17&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N/N Oracle Rd</b> - Continue to follow AZ-77 N&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.94481000000002,32.437070000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1030]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;29.39&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;53.56&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>right</b> onto <b>S Main St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.64213000000001,32.70882,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1031]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.49&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;55.04&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>right</b> onto <b>N Main St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.64669000000004,32.73082,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1032]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.14&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;55.18&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>AZ-77 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.64669000000004,32.73082,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1033]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.49&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;55.67&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Camino Rio Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.65562,32.74389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1034]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.07&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;55.74&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> to stay on <b>Camino Rio Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.65562,32.74389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1035]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;8.96&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;64.71&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>S Camino Rio Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.71875,32.835950000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1036]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;3.45&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;68.16&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>N Cam Rio</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.73245000000003,32.882200000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1037]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.94&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;70.10&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Sharp <b>right</b> onto <b>E San Pedro Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.73376000000002,32.91124,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1038]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.48&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;70.58&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>N Cholla St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.72820999999999,32.92436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1039]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.39&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;70.97&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Espanola Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.72820999999999,32.92436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1040]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.08&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;71.05&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>N Dudleyville Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.72820999999999,32.92436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1041]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.45&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;71.50&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.72820999999999,32.92436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1042]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.27&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;71.77&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>N Valentine Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.72820999999999,32.92436,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1043]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.88&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;72.65&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.75121999999999,32.96032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1044]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.04&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;72.68&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> toward <b>N Valentine Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.75121999999999,32.96032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1045]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.02&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;72.71&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>N Valentine Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.75121999999999,32.96032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1046]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.58&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;73.29&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>N Malpais Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.75121999999999,32.96032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1047]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.09&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;74.38&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.75121999999999,32.96032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1048]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.21&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;75.60&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>N Gila River Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.77129000000002,32.98087,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1049]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.67&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;76.26&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>W Quarelli St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.77129000000002,32.98087,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1050]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.03&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;76.29&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Giffin Ave</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.77129000000002,32.98087,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1051]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.13&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;76.42&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>2nd St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.7697,32.99128,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1052]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.15&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;76.57&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.7697,32.99128,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1053]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;32.86&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;109.43&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N/US-70 W</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.73829999999998,33.37321,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1054]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;2.02&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;111.45&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>AZ-77 N/US-60 E</b> (signs for <b>Arizona 77 N/Show Low/Springfield</b>)&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.76157,33.393510000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1055]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;86.59&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;198.04&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>AZ-77 N/N Penrod Rd</b> - Continue to follow AZ-77 N&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.02031,34.262950000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1056]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;47.07&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;245.11&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> to merge onto <b>I-40 E</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.15116,34.914120000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1057]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;5.71&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;250.83&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Take exit <b>292</b> for <b>AZ-77 N</b> toward <b>Keams Canyon</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.09077000000002,34.97128,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1058]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.30&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;251.12&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>State Hwy 77</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.09077000000002,34.97128,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1059]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;33.75&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;284.87&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Indn Rte 15</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.06604000000004,35.44554,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1060]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.80&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;285.67&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>Rte 15</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-110.06604000000004,35.44554,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1061]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;11.76&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;297.43&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>Indn Rte 15</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.88220000000001,35.519780000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1062]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;21.78&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;319.21&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;At the traffic circle, take the <b>2nd</b> exit onto <b>US-191 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.62689999999998,35.75479,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1063]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;60.50&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;379.71&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> to stay on <b>US-191 N</b> (signs for <b>Jct U.S.160</b>)&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.47726999999998,36.505300000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1064]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;32.50&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;412.21&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>US-160 E/US-191 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.60676999999998,36.92399,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1065]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;2.32&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;414.53&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>US-191 N</b> (signs for <b>Virginia 12</b>) - Entering Utah&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.57458000000003,36.930460000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1066]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;26.41&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;440.94&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> to stay on <b>US-191 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.62497000000002,37.26355,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1067]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;28.88&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;469.83&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Rogers Ln</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.4762,37.61827,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1068]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.16&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;469.99&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>S 100 E</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.4762,37.61827,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1069]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.19&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;471.18&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>E Center St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.4762,37.61827,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1070]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.04&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;471.23&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Slight <b>left</b> onto <b>US-191 N/N Grayson Pkwy</b> - Continue to follow US-191 N&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.4762,37.61827,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1071]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;63.86&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;535.08&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.43678,38.463300000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1072]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.24&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;535.32&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> toward <b>Geyser Pass Rd/La Sal Loop Rd/La Sal Mountain Loop Rd/Steelbender Safari Rte</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.43678,38.463300000000004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1073]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;1.26&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;536.58&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Geyser Pass Rd/La Sal Loop Rd/La Sal Mountain Loop Rd/Steelbender Safari Rte</b> - Continue to follow La Sal Mountain Loop Rd&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.43750999999997,38.47175,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1074]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;2.05&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;538.63&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>Spanish Valley Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.46054000000004,38.504290000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1075]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;5.53&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;544.16&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Continue onto <b>E Mill Creek Dr</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.51211,38.545840000000005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1076]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.92&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;545.08&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Lasal Rd</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54293000000001,38.56832,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1077]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.27&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;545.35&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>Mill Creek Parkway</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54293000000001,38.56832,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1078]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.20&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;545.55&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Mulberry Ln</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54293000000001,38.56832,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1079]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.14&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;545.69&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>N 400 E/Fourth E St</b> - Continue to follow N 400 E&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54293000000001,38.56832,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1080]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.68&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;546.37&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>left</b> onto <b>E 100 N</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.55016999999998,38.574830000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1081]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.43&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;546.80&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>N Main St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.55016999999998,38.574830000000006,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1082]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.20&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;547.00&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;Turn <b>right</b> onto <b>Nob Hill St</b>&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54993000000002,38.57777,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[S1001 1084]]></name>
+        <description><![CDATA[<table><tr><th>&nbsp;Step&nbsp;</th><th></th><th>&nbsp;Trip&nbsp;</th><th></th><th>Instructions</th></tr><tr><td style="text-align:right; padding-right:5px;">&nbsp;0.05&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td style="text-align:right; padding-right:5px;">&nbsp;547.05&nbsp;</td><td style="text-align:center;">&nbsp;mi&nbsp;</td><td>&nbsp;46 Nob Hill Street, Moab, UT 84532, USA&nbsp;</td></tr></table>]]></description>
+        <styleUrl>#IconStyle-001</styleUrl>
+        <Point>
+          <coordinates>-109.54993000000002,38.57777,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[From]]></name>
+        <description><![CDATA[<p>Days start location</p>
+]]></description>
+        <styleUrl>#IconStyle-002</styleUrl>
+        <Point>
+          <coordinates>-110.92647899999997,32.2217429,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[To]]></name>
+        <description><![CDATA[<p>Days ending location.</p>
+]]></description>
+        <styleUrl>#IconStyle-003</styleUrl>
+        <Point>
+          <coordinates>-110.78649840000003,33.3942223,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Joe]]></name>
+        <description><![CDATA[<p>Where Joe is.</p>
+]]></description>
+        <styleUrl>#IconStyle-004</styleUrl>
+        <Point>
+          <coordinates>-111.38734310000001,33.0314508,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Bob]]></name>
+        <description><![CDATA[<p>Where Bob is</p>
+]]></description>
+        <styleUrl>#IconStyle-005</styleUrl>
+        <Point>
+          <coordinates>-110.02983269999999,34.2542084,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Jim]]></name>
+        <description><![CDATA[<p>Where Jim is</p>
+]]></description>
+        <styleUrl>#IconStyle-006</styleUrl>
+        <Point>
+          <coordinates>-110.647224,32.636391,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>segments</name>
+      <description>segment lines</description>
+      <Placemark>
+        <name><![CDATA[Tucson to Moab]]></name>
+        <description><![CDATA[<p>Map data &copy;2014 Google</p>
+
+<p>Bicycling directions are in beta. Use caution &ndash; This route may contain streets that aren&#39;t suited for bicycling.</p>
+
+<table>
+	<tbody>
+		<tr>
+			<th>&nbsp;Step&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;Trip&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>Instructions</th>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.00&nbsp;</td>
+			<td style="text-align:center">&nbsp;ft&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.00&nbsp;</td>
+			<td style="text-align:center">&nbsp;ft&nbsp;</td>
+			<td>&nbsp;3669 East Sylvane Street, Tucson, AZ 85713, USA&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.00&nbsp;</td>
+			<td style="text-align:center">&nbsp;ft&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.00&nbsp;</td>
+			<td style="text-align:center">&nbsp;ft&nbsp;</td>
+			<td>&nbsp;Head <strong>west</strong> on <strong>E Sylvane St</strong> toward <strong>S Citation Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.23&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.23&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>S Palo Verde Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.03&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.26&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>E Silverlake Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.36&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.62&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>S Camilla Stravenue</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.19&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;0.81&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Aviation Bikeway</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.92&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;2.73&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> toward <strong>S Highland Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.02&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;2.74&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>S Highland Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.16&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;3.90&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>Santa Rita Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.09&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;3.99&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>E University Blvd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.03&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;4.02&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>N Highland Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.28&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;4.30&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Take the pedestrian tunnel&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.11&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;4.41&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>E Helen St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.09&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;4.50&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>N Mountain Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;3.42&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;7.93&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>right</strong> onto <strong>The Loop</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.03&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;7.96&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> toward <strong>The Loop</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.08&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;8.03&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>The Loop</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.55&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;8.58&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>left</strong> to stay on <strong>The Loop</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;2.17&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;10.75&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>right</strong> to stay on <strong>The Loop</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.04&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;10.80&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>N La Ca&ntilde;ada Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;5.93&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;16.72&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>W Linda Vista Blvd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.01&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;16.73&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Ca&ntilde;ada del Oro River Park</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.38&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;17.11&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> to stay on <strong>Ca&ntilde;ada del Oro River Park</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.70&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;18.82&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> to stay on <strong>Ca&ntilde;ada del Oro River Park</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.42&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;19.24&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>left</strong> to stay on <strong>Ca&ntilde;ada del Oro River Park</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.52&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;19.76&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> to stay on <strong>Ca&ntilde;ada del Oro River Park</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;2.50&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;22.26&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> toward <strong>E Innovation Park Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.17&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;22.43&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>E Innovation Park Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.29&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;23.72&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>E Vistoso Commerce Loop Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.44&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;24.17&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N/N Oracle Rd</strong> - Continue to follow AZ-77 N&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;29.39&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;53.56&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>right</strong> onto <strong>S Main St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.49&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;55.04&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>right</strong> onto <strong>N Main St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.14&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;55.18&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>AZ-77 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.49&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;55.67&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Camino Rio Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.07&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;55.74&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> to stay on <strong>Camino Rio Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;8.96&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;64.71&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>S Camino Rio Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;3.45&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;68.16&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>N Cam Rio</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.94&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;70.10&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Sharp <strong>right</strong> onto <strong>E San Pedro Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.48&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;70.58&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>N Cholla St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.39&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;70.97&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Espanola Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.08&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;71.05&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>N Dudleyville Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.45&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;71.50&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.27&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;71.77&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>N Valentine Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.88&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;72.65&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.04&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;72.68&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> toward <strong>N Valentine Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.02&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;72.71&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>N Valentine Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.58&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;73.29&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>N Malpais Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.09&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;74.38&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.21&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;75.60&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>N Gila River Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.67&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;76.26&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>W Quarelli St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.03&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;76.29&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Giffin Ave</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.13&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;76.42&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>2nd St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.15&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;76.57&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;32.86&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;109.43&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N/US-70 W</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;2.02&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;111.45&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>AZ-77 N/US-60 E</strong> (signs for <strong>Arizona 77 N/Show Low/Springfield</strong>)&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;86.59&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;198.04&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>AZ-77 N/N Penrod Rd</strong> - Continue to follow AZ-77 N&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;47.07&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;245.11&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> to merge onto <strong>I-40 E</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;5.71&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;250.83&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Take exit <strong>292</strong> for <strong>AZ-77 N</strong> toward <strong>Keams Canyon</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.30&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;251.12&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>State Hwy 77</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;33.75&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;284.87&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Indn Rte 15</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.80&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;285.67&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>Rte 15</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;11.76&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;297.43&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>Indn Rte 15</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;21.78&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;319.21&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;At the traffic circle, take the <strong>2nd</strong> exit onto <strong>US-191 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;60.50&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;379.71&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> to stay on <strong>US-191 N</strong> (signs for <strong>Jct U.S.160</strong>)&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;32.50&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;412.21&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>US-160 E/US-191 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;2.32&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;414.53&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>US-191 N</strong> (signs for <strong>Virginia 12</strong>) - Entering Utah&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;26.41&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;440.94&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> to stay on <strong>US-191 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;28.88&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;469.83&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Rogers Ln</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.16&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;469.99&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>S 100 E</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.19&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;471.18&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>E Center St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.04&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;471.23&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Slight <strong>left</strong> onto <strong>US-191 N/N Grayson Pkwy</strong> - Continue to follow US-191 N&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;63.86&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;535.08&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.24&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;535.32&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> toward <strong>Geyser Pass Rd/La Sal Loop Rd/La Sal Mountain Loop Rd/Steelbender Safari Rte</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;1.26&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;536.58&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Geyser Pass Rd/La Sal Loop Rd/La Sal Mountain Loop Rd/Steelbender Safari Rte</strong> - Continue to follow La Sal Mountain Loop Rd&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;2.05&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;538.63&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>Spanish Valley Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;5.53&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;544.16&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Continue onto <strong>E Mill Creek Dr</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.92&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;545.08&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Lasal Rd</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.27&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;545.35&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>Mill Creek Parkway</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.20&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;545.55&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Mulberry Ln</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.14&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;545.69&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>N 400 E/Fourth E St</strong> - Continue to follow N 400 E&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.68&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;546.37&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>left</strong> onto <strong>E 100 N</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.43&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;546.80&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>N Main St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.20&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;547.00&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;Turn <strong>right</strong> onto <strong>Nob Hill St</strong>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">&nbsp;0.05&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td style="text-align:right">&nbsp;547.05&nbsp;</td>
+			<td style="text-align:center">&nbsp;mi&nbsp;</td>
+			<td>&nbsp;46 Nob Hill Street, Moab, UT 84532, USA&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+]]></description>
+        <styleUrl>#LineStyle-001</styleUrl>
+        <LineString>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-110.91403000000003,32.20022,0.00000 
+-110.93493999999998,32.20297,0.00000 
+-110.94396,32.20864,0.00000 
+-110.95101,32.23041,0.00000 
+-110.95281,32.288230000000006,0.00000 
+-110.98099000000002,32.295120000000004,0.00000 
+-110.99135000000001,32.29341,0.00000 
+-110.99530000000004,32.32434,0.00000 
+-110.99567000000002,32.36802,0.00000 
+-110.99547000000001,32.382380000000005,0.00000 
+-110.97981000000004,32.390550000000005,0.00000 
+-110.95749,32.402010000000004,0.00000 
+-110.94092,32.413500000000006,0.00000 
+-110.94002999999998,32.42183,0.00000 
+-110.94846000000001,32.42696,0.00000 
+-110.94481000000002,32.437070000000006,0.00000 
+-110.92563000000001,32.466860000000004,0.00000 
+-110.93046000000004,32.53548,0.00000 
+-110.93068,32.56055,0.00000 
+-110.89780999999999,32.58874,0.00000 
+-110.83184,32.61408,0.00000 
+-110.76432,32.623490000000004,0.00000 
+-110.73221000000001,32.635920000000006,0.00000 
+-110.70536000000004,32.651740000000004,0.00000 
+-110.65553,32.67893,0.00000 
+-110.64213000000001,32.70882,0.00000 
+-110.64669000000004,32.73082,0.00000 
+-110.65562,32.74389,0.00000 
+-110.67331000000001,32.769800000000004,0.00000 
+-110.71875,32.835950000000004,0.00000 
+-110.73245000000003,32.882200000000005,0.00000 
+-110.73376000000002,32.91124,0.00000 
+-110.72820999999999,32.92436,0.00000 
+-110.75121999999999,32.96032,0.00000 
+-110.76409999999998,32.973310000000005,0.00000 
+-110.77129000000002,32.98087,0.00000 
+-110.7697,32.99128,0.00000 
+-110.76423,33.00502,0.00000 
+-110.75393000000003,33.00798,0.00000 
+-110.73212000000001,33.02582,0.00000 
+-110.71777000000003,33.046800000000005,0.00000 
+-110.72266000000002,33.07278,0.00000 
+-110.71654999999998,33.08362,0.00000 
+-110.72657000000004,33.093120000000006,0.00000 
+-110.74894,33.103640000000006,0.00000 
+-110.77859999999998,33.129020000000004,0.00000 
+-110.80573000000004,33.15541,0.00000 
+-110.80536000000001,33.16762,0.00000 
+-110.81134000000003,33.179770000000005,0.00000 
+-110.80534999999998,33.191430000000004,0.00000 
+-110.79696000000001,33.21468,0.00000 
+-110.77805000000001,33.25493,0.00000 
+-110.74630000000002,33.29872,0.00000 
+-110.73256000000003,33.327490000000004,0.00000 
+-110.73133000000001,33.34812,0.00000 
+-110.73829999999998,33.37321,0.00000 
+-110.76157,33.393510000000006,0.00000 
+-110.73912000000001,33.412690000000005,0.00000 
+-110.72178000000002,33.44574,0.00000 
+-110.71703000000002,33.49251,0.00000 
+-110.70062999999999,33.51151,0.00000 
+-110.69272000000001,33.54614,0.00000 
+-110.68542000000002,33.550850000000004,0.00000 
+-110.65262000000001,33.57936,0.00000 
+-110.62123000000003,33.61139,0.00000 
+-110.58361000000002,33.63345,0.00000 
+-110.57149000000004,33.65079,0.00000 
+-110.57285000000002,33.67662,0.00000 
+-110.56752,33.69337,0.00000 
+-110.54399000000001,33.70139,0.00000 
+-110.52850000000001,33.726580000000006,0.00000 
+-110.52825999999999,33.74454,0.00000 
+-110.51353,33.75855,0.00000 
+-110.50183000000004,33.78208,0.00000 
+-110.49679000000003,33.792480000000005,0.00000 
+-110.49646000000001,33.794290000000004,0.00000 
+-110.50087000000002,33.79553,0.00000 
+-110.50598000000002,33.800360000000005,0.00000 
+-110.49085000000002,33.79728,0.00000 
+-110.47305,33.808420000000005,0.00000 
+-110.46325999999999,33.815160000000006,0.00000 
+-110.45409000000001,33.830600000000004,0.00000 
+-110.4325,33.839710000000004,0.00000 
+-110.41775000000001,33.857850000000006,0.00000 
+-110.38776000000001,33.886250000000004,0.00000 
+-110.36263000000002,33.9121,0.00000 
+-110.35896000000002,33.92586,0.00000 
+-110.34581000000003,33.93233,0.00000 
+-110.33569999999997,33.938570000000006,0.00000 
+-110.32988,33.9583,0.00000 
+-110.30446,33.98124,0.00000 
+-110.28464000000002,33.98243,0.00000 
+-110.28332,33.99351,0.00000 
+-110.24189000000001,34.01469,0.00000 
+-110.23948000000001,34.035500000000006,0.00000 
+-110.22827000000001,34.040910000000004,0.00000 
+-110.19331,34.07479,0.00000 
+-110.11475000000002,34.12677,0.00000 
+-110.10343,34.15026,0.00000 
+-110.0969,34.17707,0.00000 
+-110.06427000000002,34.235600000000005,0.00000 
+-110.03893,34.252210000000005,0.00000 
+-110.02515,34.25529,0.00000 
+-110.02031,34.262950000000004,0.00000 
+-110.03784000000002,34.307610000000004,0.00000 
+-110.05344000000002,34.353280000000005,0.00000 
+-110.05261999999999,34.37464,0.00000 
+-110.06601,34.39508,0.00000 
+-110.09267,34.43117,0.00000 
+-110.09063000000003,34.469530000000006,0.00000 
+-110.07924000000003,34.52018,0.00000 
+-110.08409,34.579260000000005,0.00000 
+-110.10496,34.68612,0.00000 
+-110.14316000000002,34.829710000000006,0.00000 
+-110.16246999999998,34.87731,0.00000 
+-110.15116,34.914120000000004,0.00000 
+-110.09077000000002,34.97128,0.00000 
+-110.08893,34.987750000000005,0.00000 
+-110.1001,35.069030000000005,0.00000 
+-110.0863,35.14998,0.00000 
+-110.06295,35.20468,0.00000 
+-110.04622,35.25175,0.00000 
+-110.05202000000003,35.27197,0.00000 
+-110.06658000000004,35.317370000000004,0.00000 
+-110.06475,35.39654,0.00000 
+-110.06604000000004,35.44554,0.00000 
+-110.02123,35.469080000000005,0.00000 
+-109.93734,35.4947,0.00000 
+-109.88220000000001,35.519780000000004,0.00000 
+-109.83654000000001,35.54646,0.00000 
+-109.81754999999998,35.56955,0.00000 
+-109.76632000000001,35.58502,0.00000 
+-109.74427000000003,35.605920000000005,0.00000 
+-109.72163,35.63631,0.00000 
+-109.65981,35.705760000000005,0.00000 
+-109.62689999999998,35.75479,0.00000 
+-109.60495000000003,35.8297,0.00000 
+-109.59550999999999,35.86168,0.00000 
+-109.60373000000004,35.88181,0.00000 
+-109.61178000000001,35.91335,0.00000 
+-109.59591,35.93958,0.00000 
+-109.60193000000004,35.993460000000006,0.00000 
+-109.60978,36.06852,0.00000 
+-109.63731000000001,36.113910000000004,0.00000 
+-109.58374000000003,36.16189,0.00000 
+-109.60315000000003,36.21717,0.00000 
+-109.60558000000003,36.25274,0.00000 
+-109.60403000000002,36.287780000000005,0.00000 
+-109.62446,36.33556,0.00000 
+-109.6123,36.37604,0.00000 
+-109.60768999999999,36.45622,0.00000 
+-109.55856,36.470960000000005,0.00000 
+-109.52463999999998,36.470090000000006,0.00000 
+-109.47726999999998,36.505300000000005,0.00000 
+-109.48482999999999,36.51673,0.00000 
+-109.50699000000003,36.530640000000005,0.00000 
+-109.53038000000004,36.54605,0.00000 
+-109.55588,36.582100000000004,0.00000 
+-109.59087,36.64716,0.00000 
+-109.60540000000003,36.68426,0.00000 
+-109.63678000000004,36.74058,0.00000 
+-109.65890999999999,36.76961,0.00000 
+-109.65485999999999,36.78548,0.00000 
+-109.62278000000003,36.91293,0.00000 
+-109.60676999999998,36.92399,0.00000 
+-109.57458000000003,36.930460000000004,0.00000 
+-109.60651999999999,36.988110000000006,0.00000 
+-109.61239,37.01279,0.00000 
+-109.58546999999999,37.037600000000005,0.00000 
+-109.54806000000002,37.07922000000001,0.00000 
+-109.54498000000001,37.12144,0.00000 
+-109.56475999999998,37.148770000000006,0.00000 
+-109.61757,37.22688,0.00000 
+-109.60748999999998,37.243170000000006,0.00000 
+-109.62497000000002,37.26355,0.00000 
+-109.56308999999999,37.28191,0.00000 
+-109.54241999999999,37.289010000000005,0.00000 
+-109.52620000000002,37.312960000000004,0.00000 
+-109.51849000000004,37.352450000000005,0.00000 
+-109.50052,37.38803,0.00000 
+-109.47534000000002,37.4217,0.00000 
+-109.46704,37.460240000000006,0.00000 
+-109.47270000000003,37.48384,0.00000 
+-109.49337000000003,37.513110000000005,0.00000 
+-109.48826000000003,37.57217,0.00000 
+-109.47816999999998,37.57831,0.00000 
+-109.4762,37.61827,0.00000 
+-109.46824000000004,37.63317,0.00000 
+-109.45901000000003,37.65272,0.00000 
+-109.44668000000001,37.65525,0.00000 
+-109.43081000000001,37.67689,0.00000 
+-109.42108000000002,37.70926,0.00000 
+-109.40002000000004,37.74761,0.00000 
+-109.39148,37.76209,0.00000 
+-109.37106,37.76986,0.00000 
+-109.34848,37.786190000000005,0.00000 
+-109.33929,37.79766,0.00000 
+-109.33690999999999,37.83704,0.00000 
+-109.34174999999999,37.88803,0.00000 
+-109.34613999999999,37.94592,0.00000 
+-109.35619000000003,37.971680000000006,0.00000 
+-109.35219000000001,38.00949000000001,0.00000 
+-109.34223000000003,38.0499,0.00000 
+-109.35487,38.085930000000005,0.00000 
+-109.37117999999998,38.139140000000005,0.00000 
+-109.38148000000001,38.18124,0.00000 
+-109.37476000000004,38.202890000000004,0.00000 
+-109.38082000000003,38.24186,0.00000 
+-109.3734,38.27203,0.00000 
+-109.38301000000001,38.29301,0.00000 
+-109.42412000000002,38.322160000000004,0.00000 
+-109.43957999999998,38.36825,0.00000 
+-109.45636999999999,38.38477,0.00000 
+-109.44816000000003,38.405010000000004,0.00000 
+-109.42792000000003,38.425630000000005,0.00000 
+-109.43678,38.463300000000004,0.00000 
+-109.43750999999997,38.47175,0.00000 
+-109.46054000000004,38.504290000000005,0.00000 
+-109.51211,38.545840000000005,0.00000 
+-109.54293000000001,38.56832,0.00000 
+-109.55016999999998,38.574830000000006,0.00000 
+-109.54993000000002,38.57777,0.00000 
+</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
