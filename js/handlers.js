@@ -157,8 +157,8 @@
                 var onoff = event.data.map.html['dd-options'].find('.control-followroad').is(':checked');
                 event.data.map.options.followroad = onoff;
             });
-            this.html['dd-options'].on('click', '.control-avoidhighway', {map: this}, function (event) {
-                event.data.map.options.avoidhighway = event.data.map.html['dd-options'].find('.control-avoidhighway').is(':checked');
+            this.html['dd-options'].on('click', '.control-avoidhighways', {map: this}, function (event) {
+                event.data.map.options.avoidhighways = event.data.map.html['dd-options'].find('.control-avoidhighways').is(':checked');
             });
             this.html['dd-options'].on('change', 'input[name=travelmode]', {map: this}, function (event) {
                 event.data.map.options.travelmode = event.data.map.html['dd-options'].find('input[name=travelmode]:checked').val();
