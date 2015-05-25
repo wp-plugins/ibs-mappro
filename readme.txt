@@ -6,7 +6,7 @@ Author URI: https://indianbendsolutions.net/
 Tags: google maps, map editor, map viewer
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 0.5
+Stable tag: 0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,7 @@ Another approach is to use FTP to save and restore the folders.
 12/20/2014 4.1 fixes to jquery ui dialog position changes
 12/29/2014 version 0.4 fixes download issues. 
 02/03/2015 version 0.5 fixes download issues
+05/24/2015 version 0.6 fixes several minor issues and adds multi file browse select.
 == Upgrade Notice ==
 
 
