@@ -325,11 +325,27 @@
     };
     Map.prototype.browseDialog = function () {
         var dialog = this.html['browse-dialog'];
+        var path = '';
         dialog.dialog({
             autoOpen: true,
             width: 600,
             modal: true,
             buttons: {
+                Select: $.proxy(function () {
+                    var files = ''
+                    dialog.find('a.selected').each(function () {
+                        path = $(this).attr('rel');
+                        files += $(this).text() + ';';
+                    })
+                    if (files !== '') {
+                        path = path.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
+                        var uriinfo = purl(path);
+                        var path = uriinfo.data.attr.base + uriinfo.data.attr.directory;
+                        files = path + files.slice(0, files.length - 1);
+                        this.file.importFile(files);
+                    }
+                    dialog.dialog('close');
+                },this),
                 Close: function () {
                     $(this).dialog('close');
                 }
@@ -347,9 +363,9 @@
                     collapseSpeed: 0,
                     multiFolder: false
                 }, $.proxy(function (file) {
-                    var map = file.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
-                    this.file.importFile(map);
-                    dialog.dialog('close');
+                    //path = file.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
+                    //this.file.importFile(map);
+                    //dialog.dialog('close');
                 }, this),
                         function (dir) {
                             //

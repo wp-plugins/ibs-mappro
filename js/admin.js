@@ -427,7 +427,13 @@ jQuery(document).ready(function ($) {
         multiFolder: false
     }, function (file) {
         file = file.replace(ibs_mappro.maps_path, ibs_mappro.maps_url);
-        $('#shortcode-url').val(file);
+        var uriinfo = purl(file);
+        var files = uriinfo.data.attr.base + uriinfo.data.attr.directory;
+        $('#shortcode-browser').find('a.selected').each(function(){
+            files += $(this).text() + ';';
+        })
+        files = files.slice(0,files.length-1);
+        $('#shortcode-url').val(files);
         $('#shortcode-url').trigger('change');
     }, function (dir) {
     }

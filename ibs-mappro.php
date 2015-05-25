@@ -626,7 +626,7 @@ class IBS_MAPPRO {
             <div id="ibs-map-tab-about">
                 <div class="ibs-admin-bar">&nbsp; [ibs-mappro options]</div>
                 <div id="shortcode-options">
-                    <div> <div>title</div><input class="shortcode-input" type="text" placeholder="map title" id="shortcode-title" value="" /></div>
+                    <div> <div>title</div><input class="shortcode-input" type="text" placeholder="map title" name = 'title' id="shortcode-title" value="" /></div>
                     <div> <div>mode</div><select class="shortcode-input" name="mode" id="shortcode-mode" >
                             <option value="viewer" selected >Viewer</option>
                             <option value="edit">Edit</option>
@@ -1020,6 +1020,7 @@ function ibs_handle_shortcode_spid($atts, $content = null) {
         $loc = trim(str_replace('"', '', $value));
         $pids[$id] = $loc;
     }
+    update_option('ibs-where-is', $pids);
 }
 
 function ibs_process_email_shortcodes($post) {

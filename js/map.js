@@ -176,7 +176,7 @@ function Map(arg) {
                 browserContextMenuOnCtrl: true,
                 removePlugins: 'scayt',
                 height: 200,
-                contentsCss: this.options.site + '/css/map.css',
+                contentsCss: this.siteUrl() + '/css/map.css',
                 resize_enabled: true,
                 toolbar:
                         [

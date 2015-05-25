@@ -15,6 +15,8 @@ function File(arg) {
             gpx_tracks: true,
             gpx_waypoints: true,
             gpx_placemarks: true,
+            import_dir: null,
+            import_files: []
         };
         for (var attr in arg) {
             this.options[attr] = arg[attr];
@@ -49,42 +51,53 @@ function File(arg) {
     };
     File.prototype.importFile = function (url) {
         spin(true);
-        $.post(ibs_mappro.ajax, {
-            action: 'ibs_mappro_CORS',
-            path: url,
-            cache: false
-        }, $.proxy(function (data, status) {
-            try {
-                if (status === 'success') {
-                    try {
-                        var xml = $.parseXML(data);
-                    } catch (err) {
-                        alert(err);
-                    }
-                    if ($(xml).find('kml').length > 0) {
-                        this.options.map.kml.reader(xml, this);
-                    } else {
-                        if ($(xml).find('gpx').length > 0) {
-                            this.options.map.gpx.reader(xml, this);
-                        } else {
-                            alert('invalid file contents');
+        this.options.import_files = url.split(';');
+        var uriinfo = purl(this.options.import_files[0]);
+        this.options.import_dir = uriinfo.data.attr.base + uriinfo.data.attr.directory;
+        this.options.import_files[0] = uriinfo.data.attr.file;
+        this._importFile();
+    };
+    File.prototype._importFile = function () {
+        if (this.options.import_files.length) {
+            var url = this.options.import_dir + this.options.import_files.pop();
+            $.post(ibs_mappro.ajax, {
+                action: 'ibs_mappro_CORS',
+                path: url,
+                cache: false
+            }, $.proxy(function (data, status) {
+                try {
+                    if (status === 'success') {
+                        try {
+                            var xml = $.parseXML(data);
+                        } catch (err) {
+                            alert(err);
                         }
+                        if ($(xml).find('kml').length > 0) {
+                            this.options.map.kml.reader(xml, this);
+                        } else {
+                            if ($(xml).find('gpx').length > 0) {
+                                this.options.map.gpx.reader(xml, this);
+                            } else {
+                                alert('invalid file contents');
+                            }
+                        }
+                    } else {
+                        alert('server load failed.');
                     }
-                } else {
-                    alert('server load failed.');
+                } catch (err) {
+                    alert('process map failed.');
                 }
-            } catch (err) {
-                alert('process map failed.');
-            }
-            var fname = getFilename(url) + '.' + getExtension(url);
-            if (this.filename === this.options.map.options.filename) {
-                this.filename = fname;
-                this.options.map.html['list'].find('.list-filename').text(fname);
-            }
-            this.options.map.html['list'].find('.import-list').append($('<li>').text(fname));
-            this.postLoad();
-            spin(false);
-        }, this));
+                var fname = getFilename(url) + '.' + getExtension(url);
+                if (this.filename === this.options.map.options.filename) {
+                    this.filename = fname;
+                    this.options.map.html['list'].find('.list-filename').text(fname);
+                }
+                this.options.map.html['list'].find('.import-list').append($('<li>').text(fname));
+                this.postLoad();
+                this._importFile();
+                spin(false);
+            }, this));
+        }
     };
 
     File.prototype.checkMapname = function (filename, default_ext) {
@@ -314,7 +327,7 @@ function File(arg) {
         if (options.name === '')
             options.name = options.pid;
         this.placemarks[options.pid] = new Placemark(options);
-        if ( this.placemarks[options.pid].options.sysmbol === 'Waypoint') {
+        if (this.placemarks[options.pid].options.symbol === 'Waypoint') {
             this.placemarks[options.pid].marker.setVisible(this.options.map.html['dd-display'].find('.control-waypoints').is(':checked'));
         } else {
             this.placemarks[options.pid].marker.setVisible(this.options.map.html['dd-display'].find('.control-placemarks').is(':checked'));
@@ -547,7 +560,7 @@ function File(arg) {
                     this.setDirty(false);
                     if (download) {
                         var data_url = decodeURIComponent(data);
-                        var file_url = this.options.map.siteUrl() + 'lib/download.php?file='+ data_url;
+                        var file_url = this.options.map.siteUrl() + 'lib/download.php?file=' + data_url;
                         $.fileDownload(file_url, {
                             successCallback: $.proxy(function (url) {
                                 this.options.map.notice('Save ' + this.filename + ' completed.');
