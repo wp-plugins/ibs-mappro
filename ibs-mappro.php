@@ -4,7 +4,7 @@
   Plugin URI: http://wordpress.org/extend/plugins/
   Description: implements Google Maps API V3 for Wordpress Adimin and shortcode.
   Author: Harry Moore
-  Version: 0.5
+  Version: 0.6
   Author URI: http://indianbendsolutions.com
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
