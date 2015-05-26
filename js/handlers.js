@@ -480,7 +480,7 @@
             if (ext === 'kml' || ext === 'kmz' || ext === 'gpx') {
                 var dir = map.html['upload-dialog'].find('.upload-target-directory').val();
                 dir = ibs_mappro.maps_url + dir;
-                map.file.importFileimport(dir + fileName);
+                map.file.importFile(dir + fileName);
             }
         });
         this.html['data'].on('click', '.chart-close', {map: this}, function (event) {
