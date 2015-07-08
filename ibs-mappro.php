@@ -4,7 +4,7 @@
   Plugin URI: http://wordpress.org/extend/plugins/
   Description: implements Google Maps API V3 for Wordpress Adimin and shortcode.
   Author: Harry Moore
-  Version: 0.6
+  Version: 1.0
   Author URI: http://indianbendsolutions.com
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@
   WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
-define('IBS_MAPPRO_VERSION', '0.4');
+define('IBS_MAPPRO_VERSION', '1.0');
 
 //
 register_activation_hook(__FILE__, 'ibs_mappro_activate');
@@ -84,6 +84,9 @@ class IBS_MAPPRO {
 
         add_action('wp_ajax_ibs_mappro_garmin', array(__CLASS__, 'garmin'));
         add_action('wp_ajax_nopriv_ibs_mappro_garmin', array(__CLASS__, 'garmin'));
+
+        add_action('wp_ajax_ibs_mappro_download', array(__CLASS__, 'download'));
+        add_action('wp_ajax_nopriv_ibs_mappro_garmin', array(__CLASS__, 'download'));
     }
 
     static function copy($source, $target) {
@@ -997,6 +1000,35 @@ class IBS_MAPPRO {
         $options = get_option('ibs_mappro_garmin');
         echo json_encode($options);
         exit;
+    }
+
+    static function download() {
+        if (isset($_GET)) {
+            $filename = $_GET['file'];
+            $info = pathinfo($filename);
+            $name = $info['basename'];
+            if (file_exists($filename)) {
+                header('Set-Cookie: fileDownload=true; path=/');
+                header('Cache-Control: max-age=60, must-revalidate');
+                header('Content-Disposition: attachment; filename="' . $title . '-' . $timestamp . '.csv"');
+                header('Content-Description: File Transfer');
+                header('Content-Type: application/octet-stream');
+                header('Content-Disposition: attachment; filename="' . $name . '"');
+                header('Content-Transfer-Encoding: binary');
+                header('Expires: 0');
+                header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+                header('Pragma: public');
+                header('Content-Length: ' . filesize($filename));
+                ob_clean();
+                flush();
+                readfile($filename);
+                exit;
+            } else {
+                die;
+            }
+        } else {
+            die;
+        }
     }
 
 }

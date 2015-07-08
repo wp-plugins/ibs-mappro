@@ -560,7 +560,8 @@ function File(arg) {
                     this.setDirty(false);
                     if (download) {
                         var data_url = decodeURIComponent(data);
-                        var file_url = this.options.map.siteUrl() + 'lib/download.php?file=' + data_url;
+                        var file_url = ibs_mappro.ajax+'?action=ibs_mappro_download&file=' + data_url;
+                        //var file_url = this.options.map.siteUrl() + 'lib/download.php?file=' + data_url;
                         $.fileDownload(file_url, {
                             successCallback: $.proxy(function (url) {
                                 this.options.map.notice('Save ' + this.filename + ' completed.');
